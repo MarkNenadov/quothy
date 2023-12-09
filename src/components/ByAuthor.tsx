@@ -17,7 +17,7 @@ export const ByAuthor = (props: { quoteList: Quote[] }) => {
   return (
     <>
       {Object.entries(quotesByAuthor).map(([author, quotes]) => (
-        <div key={author} className="m-5">
+        <div key={author} className="m-1 md:m-5">
           <h2>{author}</h2>
           {quotes.map((quote, index) => (
             <QuoteContainer key={index}>

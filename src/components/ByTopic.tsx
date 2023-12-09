@@ -17,7 +17,7 @@ export const ByTopic = (props: { quoteList: Quote[] }) => {
   });
 
   return (
-    <div className="text-2xl p-4">
+    <div className="text-2xl p-1 md:p-4">
       {Object.entries(quotesByTag).map(([tag, quotes]) => (
         <div key={tag} className="m-5">
           <h2>{tag}</h2>
