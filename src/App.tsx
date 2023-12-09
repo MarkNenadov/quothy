@@ -8,7 +8,7 @@ function App() {
   const [currentTab, setCurrentTab] = useState("random")
 
   return (
-    <div className="m-1 md:m-4 text-2xl p-1 md:p-4">
+    <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
       <h2 className="bold text-5xl p-3">Quothy</h2>
       <div className="flex flex-row justify-between">
         <div 
@@ -39,6 +39,9 @@ function App() {
       {
         currentTab === "topic" && <ByTopic quoteList={data} />
       }
+      <div className="text-sm text-center pt-2">
+        Quothy uses React, Typescript, and TailwindCSS. You can see the source on <a className="underline text-blue-500" href={"https://github.com/MarkNenadov/quothy"}>GitHub</a>.
+      </div>
     </div>
   );  
 }
