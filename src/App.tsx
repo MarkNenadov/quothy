@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RandomQuote } from './components/RandomQuote';
 import { ByAuthor } from './components/ByAuthor';
+import { Tab } from './components/Tab';
 import { ByTopic } from './components/ByTopic';
 import { data } from './data/quoteData';
 
@@ -11,24 +12,21 @@ function App() {
     <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
       <h2 className="bold text-5xl p-3">Quothy</h2>
       <div className="flex flex-row justify-between">
-        <div 
-          className={`cursor-pointer mb-2 p-3 ${currentTab === "random" ? "bg-sky-300" : "bg-sky-200"} w-1/3 text-center border border-1 border-black`}
-          onClick={() => setCurrentTab("random")}
-        >
-          Random Quote
-        </div>
-        <div 
-          className={`cursor-pointer mb-2 p-3 ${currentTab === "author" ? "bg-sky-300" : "bg-sky-200"} w-1/3 text-center border border-1 border-black`}
-          onClick={() => setCurrentTab("author")}
-        >
-          By Author
-        </div>
-        <div 
-          className={`cursor-pointer mb-2 p-3 ${currentTab === "topic" ? "bg-sky-300" : "bg-sky-200"} w-1/3 text-center border border-1 border-black`}
-          onClick={() => setCurrentTab("topic")}
-        >
-          By Topic
-        </div>
+        <Tab 
+          label="Random Quote"
+          clickHook={() => setCurrentTab("random")}
+          isActive={currentTab === "random"}
+        />
+        <Tab 
+          label="By Author"
+          clickHook={() => setCurrentTab("author")}
+          isActive={currentTab === "author"}
+        />
+        <Tab 
+          label="By Topic"
+          clickHook={() => setCurrentTab("topic")}
+          isActive={currentTab === "topic"}
+        />
       </div>
       {
         currentTab === "random" && <RandomQuote quoteList={data} />
