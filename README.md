@@ -1,3 +1,5 @@
 # Quothy
 
-React site for display book quotes.
+React site for displaying book quotes.
+
+https://quotes.marknenadov.com/
