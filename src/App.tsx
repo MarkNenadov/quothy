@@ -7,13 +7,13 @@ import { data } from './data/quoteData';
 
 function App() {
   const [currentTab, setCurrentTab] = useState("random")
-
+  
   return (
     <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
       <h2 className="bold text-5xl p-3">Quothy</h2>
       <div className="flex flex-row justify-between">
         <Tab 
-          label="Random Quote"
+          label="Random"
           clickHook={() => setCurrentTab("random")}
           isActive={currentTab === "random"}
         />
