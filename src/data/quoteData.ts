@@ -66,12 +66,44 @@ export const data: Quote[] = [
       tags: ["heaven", "christian-living", "theology"]
     },
     {
+      quote: "Learning to follow Christ is learning to be a gardener of your own heart.",
+      book: {
+        author: "Pierce Taylor Hibbes",
+        title: "Finding Hope in Hard Things: A Positive Take On Suffering"
+      },
+      tags: ["christian-living", "discipleship"]
+    },
+    {
+      quote: "We should not make the mistake of thinking the difference between the Creator and the creature is simply a difference in size. To do so is to assume God can be measured, as if he were merely a bigger version of ourselves. I call this the superhero syndrome. Christians like to think of God as their superhero, like us but with superpowers. But that is a terribly unbiblical portrayal of God’s infinite nature. He is not a God who simply possesses our powers but in endless measure. No, an infinite God transcends our characteristics altogether.",
+      book: {
+        author: "Michael Barrett",
+        title: "None Greater: The Undomesticated Attributes of God"
+      },
+      tags: ["theology", "god"]
+    },
+    {
+      quote: "today the consensus of sixteenth-century scholars is that the growth and organization of the Reformed faction in France into congregations was caused by pastors and books sent illegally into France from Geneva in the 1550s and early 1560s.",
+      book: {
+        author: "Martin I. Klauber",
+        title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
+      },
+      tags: ["christian-history", "books", "french-reformation"]
+    },
+    {
       quote: "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",
       book: {
         author: "Martin I. Klauber",
         title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
       },
       tags: ["christian-history", "elders", "ecclesiology"]
+    },
+    {
+      quote: "In their system the autonomy of the local churches came first, but the need for all the churches to express their unity and to assist each other in doctrine, worship, ethics, and judicial appeals warranted self-imposed restrictions that prevented every church from “doing what was right in its own eyes.",
+      book: {
+        author: "Martin I. Klauber",
+        title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
+      },
+      tags: ["christian-history", "french-reformation", "ecclesiology"]
     },
     {
       quote: "The arachnologist W. S. Bristowe calculated in the 1930s that, at certain seasons, a meadow in south-east England may contain more than two million spiders to the acre.",
@@ -106,6 +138,14 @@ export const data: Quote[] = [
       tags: ["shakespeare", "grace"]
   },  
   {
+    quote: "out of this nettle, danger, we pluck this flower, safety",
+    book: {
+      author: "William Shakespeare",
+      title: "Henry IV Part 1",
+    },
+    tags: ["shakespeare"]
+},  
+{
     quote: "A Christian’s witness lives and dies with a Christian’s ethics.",
     book: {
       author: "Matthew Kaemingk",
@@ -176,6 +216,38 @@ export const data: Quote[] = [
     title: "Struck Down but Not Destroyed: Living Faithfully With Anxiety"
   },
   tags: ["apostle-paul", "anxiety"]
+},  
+{
+  quote: "it is best to see the genre of Acts as somewhat fluid and approach the book through the lens of multiple genres",
+  book: {
+    author: "Patrick Schreiner",
+    title: "Acts: The Christian Standard Commentary"
+  },
+  tags: ["acts", "new-testament"]
+},  
+{
+  quote: "Luke writes to encourage, to embolden emulation, and to evangelize. Together these things show the pastoral heart of Luke who was a travel companion of Paul and partook in the planting of churches.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "Acts: The Christian Standard Commentary"
+  },
+  tags: ["acts", "new-testament"]
+},  
+{
+  quote: "'Persecution is an almost omnipresent plot device' in Acts",
+  book: {
+    author: "Patrick Schreiner",
+    title: "Acts: The Christian Standard Commentary"
+  },
+  tags: ["acts", "persecution", "new-testament"]
+},  
+{
+  quote: "Readers would do well not only to read Acts but to read Acts with their ears attuned to how Luke tells his story. The form of a story is the content; it is not merely an ornament.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "Acts: The Christian Standard Commentary"
+  },
+  tags: ["acts", "new-testament"]
 },  
 {
         quote: "Linguistically, English is an outlier in differentiating between moths and butterflies. In French, there are butterflies (papillons) and night-butterflies (papillons de nuit). German (Tagfalter and Nachtfalter) and Dutch (vlinder and nachtvlinder) adopt similar approaches.",
