@@ -38,7 +38,7 @@ function App() {
         currentTab === "topic" && <ByTopic quoteList={data} />
       }
       <div className="text-sm text-center pt-2">
-        Quothy uses React, Typescript, and TailwindCSS. You can see the source on <a className="underline text-blue-500" href={"https://github.com/MarkNenadov/quothy"}>GitHub</a>.
+        {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses React, Typescript, and TailwindCSS. You can see the source on <a className="underline text-blue-500" href={"https://github.com/MarkNenadov/quothy"}>GitHub</a>.
       </div>
     </div>
   );  
