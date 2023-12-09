@@ -1,6 +1,7 @@
 import React from 'react';
 import { Quote } from '../models/quotes';
 import {QuoteContainer} from "../components/QuoteContainer"
+import {SubText} from "../components/SubText"
 
 export const ByAuthor = (props: { quoteList: Quote[] }) => {
   const { quoteList } = props;
@@ -22,9 +23,9 @@ export const ByAuthor = (props: { quoteList: Quote[] }) => {
           {quotes.map((quote, index) => (
             <QuoteContainer key={index}>
               <div>"{quote.quote}"</div>
-              <div className="w-full text-right">
+              <SubText>
                 {quote.book.title}
-              </div>
+              </SubText>
             </QuoteContainer>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Quote} from '../models/quotes'
 import {QuoteContainer} from "../components/QuoteContainer"
+import {SubText} from "../components/SubText"
 
 export const RandomQuote = ( props: { quoteList: Quote[] } ) => {
   const {quoteList} = props
@@ -20,8 +21,8 @@ export const RandomQuote = ( props: { quoteList: Quote[] } ) => {
             {randomQuote && (
         <div className="m-5">
           <div>"{randomQuote.quote}"</div>
-          <div className="w-full text-right">{randomQuote.book.author}</div>
-          <div className="w-full text-right">{randomQuote.book.title}</div>
+          <SubText>{randomQuote.book.author}</SubText>
+          <SubText>{randomQuote.book.title}</SubText>
         </div>
       )}
     </QuoteContainer>
