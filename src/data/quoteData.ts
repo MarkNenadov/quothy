@@ -7,7 +7,7 @@ export const data: Quote[] = [
         author: "Geerhardus Vos",
         title: "Grace and Glory"
       },
-      tags: ["heaven", "hebrews", "christian-living"]
+      tags: ["heaven", "christian-living"]
     },
     {
       quote: "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",

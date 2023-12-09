@@ -1,5 +1,6 @@
 import React from 'react';
 import { Quote } from '../models/quotes';
+import {QuoteContainer} from "../components/QuoteContainer"
 
 export const ByAuthor = (props: { quoteList: Quote[] }) => {
   const { quoteList } = props;
@@ -14,20 +15,20 @@ export const ByAuthor = (props: { quoteList: Quote[] }) => {
   });
 
   return (
-    <div className="text-2xl p-4">
+    <>
       {Object.entries(quotesByAuthor).map(([author, quotes]) => (
         <div key={author} className="m-5">
           <h2>{author}</h2>
           {quotes.map((quote, index) => (
-            <div key={index} className=" bg-sky-200 m-4 p-4">
+            <QuoteContainer key={index}>
               <div>"{quote.quote}"</div>
               <div className="w-full text-right">
                 {quote.book.title}
               </div>
-            </div>
+            </QuoteContainer>
           ))}
         </div>
       ))}
-    </div>
+    </>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Quote } from '../models/quotes';
+import { QuoteContainer } from './QuoteContainer';
 
 export const ByTopic = (props: { quoteList: Quote[] }) => {
   const { quoteList } = props;
@@ -21,7 +22,7 @@ export const ByTopic = (props: { quoteList: Quote[] }) => {
         <div key={tag} className="m-5">
           <h2>{tag}</h2>
           {quotes.map((quote, index) => (
-            <div key={index} className=" bg-sky-200 m-4 p-4">
+            <QuoteContainer key={index}>
               <div>"{quote.quote}"</div>
               <div className="w-full text-right">
                 {quote.book.title}
@@ -29,7 +30,7 @@ export const ByTopic = (props: { quoteList: Quote[] }) => {
               <div className="w-full text-right">
                 {quote.book.author}
               </div>
-            </div>
+           </QuoteContainer>
           ))}
         </div>
       ))}
