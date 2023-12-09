@@ -63,7 +63,7 @@ export const data: Quote[] = [
         author: "Geerhardus Vos",
         title: "Grace and Glory"
       },
-      tags: ["heaven", "christian-living"]
+      tags: ["heaven", "christian-living", "theology"]
     },
     {
       quote: "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",
@@ -71,9 +71,17 @@ export const data: Quote[] = [
         author: "Martin I. Klauber",
         title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
       },
-      tags: ["french-reformed", "church-government", "christian-history"]
+      tags: ["christian-history", "elders", "ecclesiology"]
     },
     {
+      quote: "The arachnologist W. S. Bristowe calculated in the 1930s that, at certain seasons, a meadow in south-east England may contain more than two million spiders to the acre.",
+      book: {
+        author: "Paul Hillyard",
+        title: "The Private Life of Spiders"
+      },
+      tags: ["spdiers", "nature"]
+    },  
+   {
         quote: "Good judgment, as the aphorism goes, comes from experience—and experience comes from bad judgment.",
         book: {
           author: "Megan McArdle",
@@ -93,25 +101,57 @@ export const data: Quote[] = [
       quote: "that word 'grace' In an ungracious mouth is but profane.",
       book: {
         author: "William Shakespeare",
-        title: "King Richard II"
+        title: "King Richard II",
       },
-      tags: ["shakepeare", "love"]
+      tags: ["shakespeare", "grace"]
   },  
   {
+    quote: "A Christian’s witness lives and dies with a Christian’s ethics.",
+    book: {
+      author: "Matthew Kaemingk",
+      title: "Christian Hospitality and Muslim Immigration in an Age of Fear",
+    },
+    tags: ["witness", "ethics"]
+},  
+{
+  quote: "It’s not selfish to replenish energy and renew vitality in order to serve God and others better.",
+  book: {
+    author: "David Murray",
+    title: "Reset: Living a Grace-Paced Life in a Burnout Culture",
+  },
+  tags: ["rest"]
+},  
+{
     quote: "God is not poor in mercy. He is rich in mercy.",
     book: {
       author: "Dane Ortlund",
       title: "Gentle and Lowly"
     },
-    tags: ["theology"]
+    tags: ["theology", "grace"]
 },  
-  {
+{
+  quote: "If Martian anthropologists landed in our office or at our breakfast table, they might read our hunched posture over our phones as a kind of religious devotion to some electronic talisman.",
+  book: {
+    author: "James K. A. Smith",
+    title: "You Are What You Love: The Spiritual Power of Habit"
+  },
+  tags: ["habits", "technology"]
+},  
+{
     quote: "You cannot protect or change your philosophy of ministry unless you understand the budget’s role in shaping it.",
     book: {
       author: "James Dunlop",
       title: "Budgeting for a Healthy Church"
     },
-    tags: ["ministry", "finances", "diaconate"]
+    tags: ["ministry", "finances", "ecclesiology"]
+},  
+{
+  quote: "Disunity in a church is a big deal since the mission of a church is to show off the glory of God, and disunity misrepresents God.",
+  book: {
+    author: "James Dunlop",
+    title: "Budgeting for a Healthy Church"
+  },
+  tags: ["ministry", "unity", "ecclesiology"]
 },  
 {
     quote: "An honorable grave is more esteemed Than the polluted closet of a king:",
