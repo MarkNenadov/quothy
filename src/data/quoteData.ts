@@ -90,6 +90,54 @@ export const data: Quote[] = [
         tags: ["experience", "failure"]
     },  
     {
+      quote: "that word 'grace' In an ungracious mouth is but profane.",
+      book: {
+        author: "William Shakespeare",
+        title: "King Richard II"
+      },
+      tags: ["shakepeare", "love"]
+  },  
+  {
+    quote: "God is not poor in mercy. He is rich in mercy.",
+    book: {
+      author: "Dane Ortlund",
+      title: "Gentle and Lowly"
+    },
+    tags: ["theology"]
+},  
+  {
+    quote: "You cannot protect or change your philosophy of ministry unless you understand the budget’s role in shaping it.",
+    book: {
+      author: "James Dunlop",
+      title: "Budgeting for a Healthy Church"
+    },
+    tags: ["ministry", "finances", "diaconate"]
+},  
+{
+    quote: "An honorable grave is more esteemed Than the polluted closet of a king:",
+    book: {
+      author: "William Shakespeare",
+      title: "King Edward III"
+    },
+    tags: ["shakespeare", "death"]
+},  
+{
+  quote: "We often rush to offer solutions to problems. I’m guilty of this all the time. I want to fix things as fast as possible. But in the throes of anxiety, we don’t want to be fixed right away; we want to be heard. We want to be seen.",
+  book: {
+    author: "Pierce Taylor Hibbes",
+    title: "Struck Down but Not Destroyed: Living Faithfully With Anxiety"
+  },
+  tags: ["anxiety"]
+},  
+{
+  quote: "Paul is not a hero of our faith because of his strength; he’s a hero because of his weakness",
+  book: {
+    author: "Pierce Taylor Hibbes",
+    title: "Struck Down but Not Destroyed: Living Faithfully With Anxiety"
+  },
+  tags: ["apostle-paul", "anxiety"]
+},  
+{
         quote: "Linguistically, English is an outlier in differentiating between moths and butterflies. In French, there are butterflies (papillons) and night-butterflies (papillons de nuit). German (Tagfalter and Nachtfalter) and Dutch (vlinder and nachtvlinder) adopt similar approaches.",
         book: {
           author: "James Lowen",
