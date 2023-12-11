@@ -3,10 +3,9 @@ import { Quote } from '../models/quotes';
 import {QuoteContainer} from "../components/QuoteContainer"
 import {SubText} from "../components/SubText"
 
-export const ByAuthor = (props: { quoteList: Quote[] }) => {
-  const { quoteList } = props;
-
+export const ByAuthor = ({quoteList}: { quoteList: Quote[] }) => {
   const quotesByAuthor: { [author: string]: Quote[] } = {};
+  
   quoteList.forEach((quote) => {
     const author = quote.book.author;
     if (!quotesByAuthor[author]) {

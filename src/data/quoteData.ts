@@ -74,6 +74,38 @@ export const data: Quote[] = [
       tags: ["christian-living", "discipleship"]
     },
     {
+      quote: "On no point is the mind of God more fully declared than against pride",
+      book: {
+        author: "Charles Bridges",
+        title: "Proverbs"
+      },
+      tags: ["christian-living"]
+    },
+    {
+      quote: "Copernicus was labeled a heretic for saying the earth wasn’t the center of the universe, but the new heresy is apparently any suspicion that the universe doesn’t revolve around you",
+      book: {
+        author: "Nicolas Alford and Nicholas Kennicott",
+        title: "In Praise of Old Guys: Pastoral Mentorship, Humility, and the Dangers of Youth"
+      },
+      tags: ["self"]
+    },
+    {
+      quote: "Christianity is discipleship, at its very core (Matthew 28:19, Titus 2). You should always be discipling others, and you should always be being discipled. Don’t settle for a casual relationship that soothes your conscience; engage Christ’s discipleship call like you really believe the Son of God is the one who told you to do it. This is a concept with a rich biblical pedigree. In 2 Timothy 2:2 there are actually five distinct parties involved in mentorship. There is the core mentor/mentee rela-tionship of Paul and Timothy. This is happening in the context of 'many witnesses,' a reference to the local church. Furthermore, Paul charges Timothy to take up the dis-cipleship baton and entrust it to 'faithful men.' But even then the discipleship chain reaction isn’t finished: those faithful men are to be poured into so that they 'will be able to teach others also.' Paul’s vision for pastoral training is multigenerational mentorship in the context of the local church.",
+      book: {
+        author: "Nicolas Alford and Nicholas Kennicott",
+        title: "In Praise of Old Guys: Pastoral Mentorship, Humility, and the Dangers of Youth"
+      },
+      tags: ["christian-living"]
+    },
+    {
+      quote: "distance is the great deceiver and imagination the great receiver",
+      book: {
+        author: "Kim Campbell",
+        title: "Time and Chance: The Political Memoirs of Canada&#39;s First Woman Prime Minister"
+      },
+      tags: ["birding", "mind", "psychology"]
+    },
+    {
       quote: "We should not make the mistake of thinking the difference between the Creator and the creature is simply a difference in size. To do so is to assume God can be measured, as if he were merely a bigger version of ourselves. I call this the superhero syndrome. Christians like to think of God as their superhero, like us but with superpowers. But that is a terribly unbiblical portrayal of God’s infinite nature. He is not a God who simply possesses our powers but in endless measure. No, an infinite God transcends our characteristics altogether.",
       book: {
         author: "Michael Barrett",
@@ -113,6 +145,14 @@ export const data: Quote[] = [
       },
       tags: ["spdiers", "nature"]
     },  
+    {
+      quote: "If we shift our gaze to the more doctrinally selective churches, particularly of the Reformed variety, we will hear strong affirmations of 'the ministry of the Word' and 'building the church on the word'. And typically these phrases refer to the teaching ministry of the Sunday morning pulpit. The problem here, however, is the God's Word is not always massaged throughout the life of the congregation, like yeast through dought. People show up on Sunday for the sermon, and often do little more. The ministry of the Word stops at noon...the 'ministry of the Word' indeed begins in the pulpit, but then it must continue through the life of the church as members echo God's Word back and forth to one another. The word reverberates as in an echo chamber",
+      book: {
+        author: "Jonathan Leeman",
+        title: "reverberation: How God's word brings to light, freedom, and action to His people"
+      },
+      tags: ["ecclesiology"]
+    },      
    {
         quote: "Good judgment, as the aphorism goes, comes from experience—and experience comes from bad judgment.",
         book: {

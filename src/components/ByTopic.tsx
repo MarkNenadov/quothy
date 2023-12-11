@@ -3,10 +3,9 @@ import { Quote } from '../models/quotes';
 import { QuoteContainer } from './QuoteContainer';
 import { SubText } from './SubText';
 
-export const ByTopic = (props: { quoteList: Quote[] }) => {
-  const { quoteList } = props;
-
+export const ByTopic = ({quoteList}: { quoteList: Quote[] }) => {
   const quotesByTag: { [tag: string]: Quote[] } = {};
+  
   quoteList.forEach((quote) => {
     const tags = quote.tags;
     tags.forEach((tag) => {

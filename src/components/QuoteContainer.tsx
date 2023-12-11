@@ -5,13 +5,11 @@ interface QuoteContainerProps {
     textStyle?: string;
   }
   
-export const QuoteContainer = (props: QuoteContainerProps) => {
+export const QuoteContainer = ({children, textStyle}: QuoteContainerProps) => {
 
   return (
-    <div className={`${props.textStyle}  bg-sky-200 p-4 w-full`}>
-        {
-            props.children
-        }
+    <div className={`${textStyle}  bg-sky-200 p-4 w-full`}>
+        { children }
     </div>
   );  
 }
