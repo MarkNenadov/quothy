@@ -95,7 +95,7 @@ export const data: Quote[] = [
         author: "Nicolas Alford and Nicholas Kennicott",
         title: "In Praise of Old Guys: Pastoral Mentorship, Humility, and the Dangers of Youth"
       },
-      tags: ["christian-living"]
+      tags: ["christian-living", "discipleship"]
     },
     {
       quote: "distance is the great deceiver and imagination the great receiver",
@@ -120,6 +120,14 @@ export const data: Quote[] = [
         title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
       },
       tags: ["christian-history", "books", "french-reformation"]
+    },
+    {
+      quote: "It is unfortunate that the French delegation was prevented from attending the Synod of Dort. One is left to wonder: If Du Moulin had been allowed to participate in person, would he have been a significant moderating influence on the synod and the canons?",
+      book: {
+        author: "Martin I. Klauber",
+        title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
+      },
+      tags: ["christian-history", "theology", "french-reformation"]
     },
     {
       quote: "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",
@@ -295,7 +303,31 @@ export const data: Quote[] = [
           author: "James Lowen",
           title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
         },
-        tags: ["moths"]
+        tags: ["moths", "nature"]
     },  
+    {
+      quote: "In an age characterised by nature-deficit disorder, I seek liberation through sensitising myself to moths’ seasonality.",
+      book: {
+        author: "James Lowen",
+        title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
+      },
+      tags: ["moths", "nature"]
+  },  
+  {
+    quote: "One moth addict I meet confesses that ‘the hobby takes over your life, no two ways about it,’ but flusters that his partner prefers him to be ‘infatuated with mothing than taking drugs or eyeing up other women.’",
+    book: {
+      author: "James Lowen",
+      title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
+    },
+    tags: ["moths", "nature"]
+  },
+  {
+    quote: "Migrant mothing is the art of the possible – but so often the ‘possible’ remains precisely that.’",
+    book: {
+      author: "James Lowen",
+      title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
+    },
+    tags: ["moths", "nature"]
+  },   
 ];
   
