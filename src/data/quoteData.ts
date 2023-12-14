@@ -26,6 +26,22 @@ export const data: Quote[] = [
     tags: ["management", "leadership"]
   },
   {
+    quote: "look for self-regulating processes. If you find yourself playing the role of taskmaster — criticizing people who break the rules or don’t follow the process — see if the process itself can be changed to be easier to follow.",
+    book: {
+      author: "Camile Fournier",
+      title: "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change"
+    },
+    tags: ["management", "leadership"]
+  },
+  {
+    quote: "If you join or create a company with very different values than your own, you’ll feel a great deal of friction that will make your life harder. At the highest levels, all of this cultural alignment comes to play in everything you do, because you spend so much of your time in the land of negotiation, collaboration, and cross-functional teamwork. This doesn’t mean that you can’t be successful in a company that holds some different values from your own. In fact, it’s pretty rare that you agree perfectly with every value of every person on the senior team of a company. You probably don’t even agree with every value of every person in your family, or among your friends! Still, the amount of overlap between the traits you value most and the traits your company values most largely determines how easy the fit will be for you.",
+    book: {
+      author: "Camile Fournier",
+      title: "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change"
+    },
+    tags: ["management", "leadership"]
+  },
+  {
     quote: "The most important lesson I’ve learned is that you have to be able to manage yourself if you want to be good at managing others.",
     book: {
       author: "Camile Fournier",
@@ -42,12 +58,36 @@ export const data: Quote[] = [
     tags: ["nature"]
   },
   {
+    quote: "Pitchers need to be students, forever students,",
+    book: {
+      author: "David Cone",
+      title: "Full Count: The Education of a Pitcher"
+    },
+    tags: ["learning", "baseball"]
+  },
+  {
+    quote: "If one’s argument for civilization holds that wild predators should never roam in broad daylight through the boroughs of America’s largest, loudest, most radically urban metropolis, then, truly, the end of civilization had arrived on paw prints in the snow."    ,
+    book: {
+      author: "Dan Flores",
+      title: "Coyote America"
+    },
+    tags: ["nature"]
+  },
+  {
     quote: "O powerful love! that in some respects, makes a beast a man; in some other a man a beast.",
     book: {
       author: "Wlliam Shakespeare",
       title: "The Merry Wives of Windsor"
     },
     tags: ["love", "shakespeare"]
+  },
+  {
+    quote: "the world's mine oyster, Which I with sword will open.",
+    book: {
+      author: "Wlliam Shakespeare",
+      title: "The Merry Wives of Windsor"
+    },
+    tags: ["shakespeare"]
   },
   {
     quote: "we Westerners so emphasize a merely legal understanding of the death of Christ for our salvation that we overlook material in the New Testament that doesn’t fit that model.",
@@ -88,6 +128,14 @@ export const data: Quote[] = [
         title: "In Praise of Old Guys: Pastoral Mentorship, Humility, and the Dangers of Youth"
       },
       tags: ["self"]
+    },
+    {
+      quote: "Let’s be clear: God doesn’t need you. Jesus doesn’t need you. The Holy Spirit doesn’t need you. Men have been pastoring the church for thousands of years, and the kingdom will be in fine shape after you’re dead. God always has his workers; even a donkey will do in a pinch.",
+      book: {
+        author: "Nicolas Alford and Nicholas Kennicott",
+        title: "In Praise of Old Guys: Pastoral Mentorship, Humility, and the Dangers of Youth"
+      },
+      tags: ["church-leadership"]
     },
     {
       quote: "Christianity is discipleship, at its very core (Matthew 28:19, Titus 2). You should always be discipling others, and you should always be being discipled. Don’t settle for a casual relationship that soothes your conscience; engage Christ’s discipleship call like you really believe the Son of God is the one who told you to do it. This is a concept with a rich biblical pedigree. In 2 Timothy 2:2 there are actually five distinct parties involved in mentorship. There is the core mentor/mentee rela-tionship of Paul and Timothy. This is happening in the context of 'many witnesses,' a reference to the local church. Furthermore, Paul charges Timothy to take up the dis-cipleship baton and entrust it to 'faithful men.' But even then the discipleship chain reaction isn’t finished: those faithful men are to be poured into so that they 'will be able to teach others also.' Paul’s vision for pastoral training is multigenerational mentorship in the context of the local church.",
@@ -186,6 +234,14 @@ export const data: Quote[] = [
       tags: ["shakespeare", "grace"]
   },  
   {
+    quote: "They love not poison that do poison needs",
+    book: {
+      author: "William Shakespeare",
+      title: "King Richard II",
+    },
+    tags: ["shakespeare"]
+},  
+{
     quote: "out of this nettle, danger, we pluck this flower, safety",
     book: {
       author: "William Shakespeare",
@@ -250,6 +306,22 @@ export const data: Quote[] = [
     tags: ["shakespeare", "death"]
 },  
 {
+  quote: "Wisdom is foolishness but in her tongue, Beauty a slander but in her fair face, There is no summer but in her cheerful looks, Nor frosty winter but in her disdain.",
+  book: {
+    author: "William Shakespeare",
+    title: "King Edward III"
+  },
+  tags: ["shakespeare", "death"]
+},  
+{
+  quote: "For I do hold a tree in France too good To be the gallows of an English thief.",
+  book: {
+    author: "William Shakespeare",
+    title: "King Edward III"
+  },
+  tags: ["shakespeare", "death"]
+},  
+{
   quote: "We often rush to offer solutions to problems. I’m guilty of this all the time. I want to fix things as fast as possible. But in the throes of anxiety, we don’t want to be fixed right away; we want to be heard. We want to be seen.",
   book: {
     author: "Pierce Taylor Hibbes",
@@ -272,6 +344,14 @@ export const data: Quote[] = [
     title: "Acts: The Christian Standard Commentary"
   },
   tags: ["acts", "new-testament"]
+},  
+{
+  quote: "Chris descended in order to bring God to humanity, and he ascended to bring humanity to God.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "The Ascension of Christ: Recovering a Neglected Doctrine"
+  },
+  tags: ["ascension", "theology"]
 },  
 {
   quote: "Luke writes to encourage, to embolden emulation, and to evangelize. Together these things show the pastoral heart of Luke who was a travel companion of Paul and partook in the planting of churches.",
