@@ -346,7 +346,7 @@ export const data: Quote[] = [
   tags: ["acts", "new-testament"]
 },  
 {
-  quote: "Chris descended in order to bring God to humanity, and he ascended to bring humanity to God.",
+  quote: "Christ descended in order to bring God to humanity, and he ascended to bring humanity to God.",
   book: {
     author: "Patrick Schreiner",
     title: "The Ascension of Christ: Recovering a Neglected Doctrine"
