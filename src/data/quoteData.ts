@@ -148,8 +148,8 @@ export const data: Quote[] = [
     {
       quote: "distance is the great deceiver and imagination the great receiver",
       book: {
-        author: "Kim Campbell",
-        title: "Time and Chance: The Political Memoirs of Canada&#39;s First Woman Prime Minister"
+        author: "Various",
+        title: "Hawks In Flight: Second Edition"
       },
       tags: ["birding", "mind", "psychology"]
     },
