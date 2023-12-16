@@ -42,8 +42,8 @@ function App() {
       }
       <div className="text-sm text-center pt-2">
         {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses React, Typescript, and TailwindCSS. You can see the source on 
-        <a 
-          className="underline text-blue-500" 
+        &nbsp;<a 
+          className="underline text-blue-800" 
           href={"https://github.com/MarkNenadov/quothy"}
           aria-label='"GitHub Source Link'
         >
