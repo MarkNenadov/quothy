@@ -6,7 +6,7 @@ Using React/Typescript/TailwindCSS.
 
 https://quotes.marknenadov.com/
 
-## Lighthouse Scores
+## Mobile Lighthouse Scores
 
 As of Dec 16, 2023, this site has the following lighthouse scores
 
