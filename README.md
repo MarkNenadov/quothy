@@ -2,13 +2,15 @@
 
 React site for displaying book quotes.
 
+Using React/Typescript/TailwindCSS.
+
 https://quotes.marknenadov.com/
 
-### Lighthouse Scores
+## Lighthouse Scores
 
-As of Dec 2023, this site has the following lighthouse scores
+As of Dec 16, 2023, this site has the following lighthouse scores
 
-Performance: 99
-Accessibility: 90
+Performance: 100
+Accessibility: 95
 Best Practices: 100
-SEO: 92
+SEO: 100
