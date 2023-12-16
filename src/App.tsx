@@ -16,16 +16,19 @@ function App() {
           label="Random"
           clickHook={() => setCurrentTab("random")}
           isActive={currentTab === "random"}
+          tabIndex={0}
         />
         <Tab 
           label="By Author"
           clickHook={() => setCurrentTab("author")}
           isActive={currentTab === "author"}
+          tabIndex={1}
         />
         <Tab 
           label="By Topic"
           clickHook={() => setCurrentTab("topic")}
           isActive={currentTab === "topic"}
+          tabIndex={2}
         />
       </div>
       {
@@ -38,7 +41,14 @@ function App() {
         currentTab === "topic" && <ByTopic quoteList={data} />
       }
       <div className="text-sm text-center pt-2">
-        {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses React, Typescript, and TailwindCSS. You can see the source on <a className="underline text-blue-500" href={"https://github.com/MarkNenadov/quothy"}>GitHub</a>.
+        {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses React, Typescript, and TailwindCSS. You can see the source on 
+        <a 
+          className="underline text-blue-500" 
+          href={"https://github.com/MarkNenadov/quothy"}
+          aria-label='"GitHub Source Link'
+        >
+          GitHub
+        </a>.
       </div>
     </div>
   );  
