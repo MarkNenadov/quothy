@@ -2,8 +2,9 @@ import React from 'react';
 import { Quote } from '../models/quotes';
 import {QuoteContainer} from "../components/QuoteContainer"
 import {SubText} from "../components/SubText"
+import { QuoteDisplayComponentProps } from '../baseProps';
 
-export const ByAuthor = ({quoteList}: { quoteList: Quote[] }) => {
+export const ByAuthor = ({quoteList}: QuoteDisplayComponentProps) => {
   const quotesByAuthor: { [author: string]: Quote[] } = {};
   
   quoteList.forEach((quote) => {
