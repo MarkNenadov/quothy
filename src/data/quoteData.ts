@@ -330,6 +330,54 @@ export const data: Quote[] = [
   tags: ["anxiety"]
 },  
 {
+  quote: "What Ernest Hemmingway said of war we can say of anxiety: It burns the fat off our souls.",
+  book: {
+    author: "Pierce Taylor Hibbes",
+    title: "Struck Down but Not Destroyed: Living Faithfully With Anxiety"
+  },
+  tags: ["anxiety"]
+},  
+{
+  quote: "One of the more enduring misconceptions concerning the Puritans in America is that they adjured alcohol. In fact, they liked a good drink, or even a not so good one.",
+  book: {
+    author: "Bill Bryson",
+    title: "Made In America"
+  },
+  tags: ["puritans", "alcohol"]
+},  
+{
+  quote: "France was both the cradle of European liberty and the cradle of censorship",
+  book: {
+    author: "Fernando Baez",
+    title: "A Universal History of the Destruction of Books"
+  },
+  tags: ["europe"]
+},  
+{
+  quote: "Of the strawberry, Roger Williams (founder of Rhode Island and founder of the first Baptist congregation in America) said: This Berry is the wonder of all Fruits growing naturally in those parts: It is of it selfe Excellent; so that one of the chiefest Doctors of England was wont to say, that God could have made, but God never did make a better Berry",
+  book: {
+    author: "Henry Chupac",
+    title: "Roger Williams"
+  },
+  tags: ["food"]
+},  
+{
+  quote: "They key word is 'better.' It is a key to the whole Book of Hebrews, which speaks of better things, in Christ--a better plan, a better priest, a better covenant, a better sacrifice, better blood, a better home forever.",
+  book: {
+    author: "Hebrews (Reformed Expository Commentary)",
+    title: "Richard Phillips"
+  },
+  tags: ["hebrews", "new-testament"]
+},  
+{
+  quote: "The mere presence of institutional elements (rules, resources, hierarchies) within a church does not necessarily imply institutionalism, any more than law implies legalism, or dogma implies dogmatism",
+  book: {
+    author: "Jonathan Leeman",
+    title: "The Church and the Surprising Offense of God's Love"
+  },
+  tags: ["church"]
+},  
+{
   quote: "Paul is not a hero of our faith because of his strength; he’s a hero because of his weakness",
   book: {
     author: "Pierce Taylor Hibbes",
@@ -344,6 +392,14 @@ export const data: Quote[] = [
     title: "Acts: The Christian Standard Commentary"
   },
   tags: ["acts", "new-testament"]
+},  
+{
+  quote: "For Kuyper, ideological hegemony was not merely irrational—it was blasphemous. For, Kuyper declared, whenever religious freedom is crushed, 'God’s name' is 'robbed of its splendor.'",
+  book: {
+    author: "Matthew Kaemingk",
+    title: "Christian Hospitality and Muslim Immigration in an Age of Fear"
+  },
+  tags: ["religious-freedom", "liberty"]
 },  
 {
   quote: "Christ descended in order to bring God to humanity, and he ascended to bring humanity to God.",
@@ -378,21 +434,21 @@ export const data: Quote[] = [
   tags: ["acts", "new-testament"]
 },  
 {
-        quote: "Linguistically, English is an outlier in differentiating between moths and butterflies. In French, there are butterflies (papillons) and night-butterflies (papillons de nuit). German (Tagfalter and Nachtfalter) and Dutch (vlinder and nachtvlinder) adopt similar approaches.",
-        book: {
-          author: "James Lowen",
-          title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
-        },
-        tags: ["moths", "nature"]
-    },  
-    {
-      quote: "In an age characterised by nature-deficit disorder, I seek liberation through sensitising myself to moths’ seasonality.",
-      book: {
-        author: "James Lowen",
-        title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
-      },
-      tags: ["moths", "nature"]
-  },  
+  quote: "Linguistically, English is an outlier in differentiating between moths and butterflies. In French, there are butterflies (papillons) and night-butterflies (papillons de nuit). German (Tagfalter and Nachtfalter) and Dutch (vlinder and nachtvlinder) adopt similar approaches.",
+  book: {
+    author: "James Lowen",
+    title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
+  },
+  tags: ["moths", "nature"]
+},  
+{
+  quote: "In an age characterised by nature-deficit disorder, I seek liberation through sensitising myself to moths’ seasonality.",
+  book: {
+    author: "James Lowen",
+    title: "Much Ado About Mothing: A year intoxicated by Britain’s rare and remarkable moths"
+  },
+  tags: ["moths", "nature"]
+},  
   {
     quote: "One moth addict I meet confesses that ‘the hobby takes over your life, no two ways about it,’ but flusters that his partner prefers him to be ‘infatuated with mothing than taking drugs or eyeing up other women.’",
     book: {
