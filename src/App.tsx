@@ -1,20 +1,35 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RandomQuote } from './components/RandomQuote';
 import { ByAuthor } from './components/ByAuthor';
 import { Tab } from './components/Tab';
 import { ByTopic } from './components/ByTopic';
 import { data } from './data/quoteData';
+import { Quote } from './models/quotes'
 
 function App() {
   const [currentTab, setCurrentTab] = useState("random")
   
+  const [randomQuote, setRandomQuote] = useState<Quote | undefined>(undefined);
+
+  const generateRandomQuote = () => {
+    const randomIndex = Math.floor(Math.random() * data.length);
+    setRandomQuote(data[randomIndex]);
+  };
+
+  useEffect(() => {
+    generateRandomQuote();
+  }); 
+
   return (
     <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
       <h2 className="bold text-5xl p-3">Quothy</h2>
       <div className="flex flex-row justify-between">
         <Tab 
           label="Random"
-          clickHook={() => setCurrentTab("random")}
+          clickHook={() => {
+            setCurrentTab("random");
+            currentTab === "random" && generateRandomQuote();
+          }}
           isActive={currentTab === "random"}
           tabIndex={0}
         />
@@ -32,7 +47,7 @@ function App() {
         />
       </div>
       {
-        currentTab === "random" && <RandomQuote quoteList={data} />
+        currentTab === "random" && <RandomQuote randomQuote={randomQuote} />
       }
       {
         currentTab === "author" && <ByAuthor quoteList={data} />

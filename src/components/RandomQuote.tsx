@@ -1,21 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Quote} from '../models/quotes'
 import {QuoteContainer} from "../components/QuoteContainer"
 import {SubText} from "../components/SubText"
-import { QuoteDisplayComponentProps } from '../baseProps';
 
-export const RandomQuote = ( {quoteList}: QuoteDisplayComponentProps ) => {
-  const [randomQuote, setRandomQuote] = useState<Quote | null>(null);
+interface RandomQuoteProps {
+  randomQuote?: Quote
+}
 
-  const generateRandomQuote = () => {
-    const randomIndex = Math.floor(Math.random() * quoteList.length);
-    setRandomQuote(quoteList[randomIndex]);
-  };
-
-  useEffect(() => {
-    generateRandomQuote();
-  }); 
-
+export const RandomQuote = ( {randomQuote}: RandomQuoteProps ) => {
   return (
     <QuoteContainer textStyle="text-s md:text-3xl">
             {randomQuote && (
