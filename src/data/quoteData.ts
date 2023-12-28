@@ -178,6 +178,22 @@ export const data: Quote[] = [
       tags: ["christian-history", "theology", "french-reformation"]
     },
     {
+      quote: "Recent estimates put the number of Calvinists in France in 1560 at around two million, forming some 10 percent of the total French population.",
+      book: {
+        author: "Martin I. Klauber",
+        title: "The Theology of the French Reformed Churches: From Henry IV to the Revocation of the Edict of Nantes"
+      },
+      tags: ["christian-history", "french-reformation"]
+    },
+    {
+      quote: "you could almost say the New Testament is one long commentary on the Psalms",
+      book: {
+        author: "Ian Stackhouse",
+        title: "Praying Psalms: A Personal Journey through the Psalter"
+      },
+      tags: ["psalms"]
+    },
+    {
       quote: "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",
       book: {
         author: "Martin I. Klauber",
