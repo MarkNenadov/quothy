@@ -178,6 +178,14 @@ export const data: Quote[] = [
       tags: ["christian-history", "theology", "french-reformation"]
     },
     {
+      quote: "Losing the gold on my first Olympics changed my life. I learned so tangibly (and devastatingly) early on that failure is not fatal. It stings. It sucks. But I came to see that failure is the setup for a comeback. The loses just inspire you to do better. To work harder. To learn from your mistakes.",
+      book: {
+        author: "Hayley Wickenheiser",
+        title: "Over The Boards"
+      },
+      tags: ["hockey", "failure"]
+    },
+    {
       quote: "Recent estimates put the number of Calvinists in France in 1560 at around two million, forming some 10 percent of the total French population.",
       book: {
         author: "Martin I. Klauber",
