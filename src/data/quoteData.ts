@@ -186,6 +186,22 @@ export const data: Quote[] = [
       tags: ["hockey", "failure"]
     },
     {
+      quote: "Grit requires rest.",
+      book: {
+        author: "Hayley Wickenheiser",
+        title: "Over The Boards"
+      },
+      tags: ["hockey", "grit", "rest"]
+    },
+    {
+      quote: "Being a seeker is a mindset, one that forces you to grow. I never settled for safe. I never did what has been done before...If I was getting bored or complacent, I changed things up. I never trained with my equals...I worked out with people who were bigger, stronger, or faster, or had something new to teach me. It's the best way to improve.",
+      book: {
+        author: "Hayley Wickenheiser",
+        title: "Over The Boards"
+      },
+      tags: ["hockey", "learning"]
+    },
+    {
       quote: "Recent estimates put the number of Calvinists in France in 1560 at around two million, forming some 10 percent of the total French population.",
       book: {
         author: "Martin I. Klauber",
