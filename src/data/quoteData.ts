@@ -194,6 +194,22 @@ export const data: Quote[] = [
       tags: ["hockey", "grit", "rest"]
     },
     {
+      quote: "Being in leadership is one of the toughest jobs out there. As a leader, I never let anyone off easy. I held us all accountable, myself included. I was never afraid of being unpopular. Being a captain was often lonely as hell, and I felt constant pressure to be strong, to not make mistakes. I wish I had realized earlier that vulnerability doesn't undercut your authority as a leader, but enhances it.  Making mistakes is unavoidable. But being honest and open about those mistakes makes you a better leader. Acting with empathy first, always, makes you a better leader and a better person.",
+      book: {
+        author: "Hayley Wickenheiser",
+        title: "Over The Boards"
+      },
+      tags: ["leadership", "empathy", "hockey"]
+    },
+    {
+      quote: "Life is not all joy above sorrow; life is a battle for joy in the midst in the midst of sorrow.",
+      book: {
+        author: "John Piper",
+        title: "God Is The Gospel"
+      },
+      tags: ["joy", "christian-living"]
+    },
+    {
       quote: "Being a seeker is a mindset, one that forces you to grow. I never settled for safe. I never did what has been done before...If I was getting bored or complacent, I changed things up. I never trained with my equals...I worked out with people who were bigger, stronger, or faster, or had something new to teach me. It's the best way to improve.",
       book: {
         author: "Hayley Wickenheiser",
