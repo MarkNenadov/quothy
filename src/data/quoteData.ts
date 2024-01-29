@@ -186,12 +186,28 @@ export const data: Quote[] = [
       tags: ["hockey", "failure"]
     },
     {
+      quote: "I feel strongly that we did not build our institutions, our traditions, our history, our national pride, in short this great country Canada, to become the fifty-first state of America.",
+      book: {
+        author: "Jean Chretien",
+        title: "Straight From The Heart"
+      },
+      tags: ["canadian-politics"]
+    },
+    {
       quote: "Grit requires rest.",
       book: {
         author: "Hayley Wickenheiser",
         title: "Over The Boards"
       },
       tags: ["hockey", "grit", "rest"]
+    },
+    {
+      quote: "We are steeped in a culture of speed, so much so that it can feel at times like we are living in fast-forward. This conditions us to think that slow means lazy. Or that slow means indecisive. Or that slow means stupid. That if we don't rush, we'll be left in the dust. Reject that thinking. Hockey's greatest players have the ability to slow the game down., twisting their defenders into a pretzel, lulling them, before taking off with lightening speed. Whether you're an entrepreneur, a scientist, or an athlete, building a successful company, career, or team is about more than velocity. It's about seeding success long before you reap the rewards of your labour. It's about balancing urgency with caution. It's about moving slowly enough to make the needed fixes as they come up.",
+      book: {
+        author: "Hayley Wickenheiser",
+        title: "Over The Boards"
+      },
+      tags: ["hockey", "speed"]
     },
     {
       quote: "Being in leadership is one of the toughest jobs out there. As a leader, I never let anyone off easy. I held us all accountable, myself included. I was never afraid of being unpopular. Being a captain was often lonely as hell, and I felt constant pressure to be strong, to not make mistakes. I wish I had realized earlier that vulnerability doesn't undercut your authority as a leader, but enhances it.  Making mistakes is unavoidable. But being honest and open about those mistakes makes you a better leader. Acting with empathy first, always, makes you a better leader and a better person.",
