@@ -194,6 +194,22 @@ export const data: Quote[] = [
       tags: ["canadian-politics"]
     },
     {
+      quote: "To believe ourselves in a state of salvation, (however desirable, when grounded on evidence), is far inferior, in its object, to saving faith. The grand object on which faith fixes, is the glory of Christ, and not the happy coidtion we are in",
+      book: {
+        author: "Andrew Fuller",
+        title: "The Gospel Worthy Of All Acceptation"
+      },
+      tags: ["salvation", "theology"]
+    },
+    {
+      quote: "Some things benefit from shocks; they thrive and grow when exposed to randomness, disorder and stressors, and love adventure, risk, and uncertainty. Yet, in spite of the ubiquity of the phenomenon, there is no word for the exact opposite of fragile. Let us call it antifragile.",
+      book: {
+        author: "Nassim Nicholas Taleb",
+        title: "Antifragile: Things That Gain from Disorder"
+      },
+      tags: ["disorder"]
+    },
+    {
       quote: "Grit requires rest.",
       book: {
         author: "Hayley Wickenheiser",
