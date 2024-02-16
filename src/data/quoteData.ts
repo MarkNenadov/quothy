@@ -202,6 +202,30 @@ export const data: Quote[] = [
       tags: ["salvation", "theology"]
     },
     {
+      quote: "When I was younger, I took a lot of pride in coming up with interview questions. I now believe the best interview technique is no technique at all: you simply have enough of a converssation that you can get to know the person a little bit.",
+      book: {
+        author: "Will Guidara",
+        title: "Unreasonable Hospitality"
+      },
+      tags: ["interviews"]
+    },
+    {
+      quote: "if you take care of your managers and give them what they need to be successful, you put them in a better position to take care of their teams.",
+      book: {
+        author: "Will Guidara",
+        title: "Unreasonable Hospitality"
+      },
+      tags: ["management", "leadership"]
+    },
+    {
+      quote: "no one who ever changed the game did so by being reasonable...across every discipline...you need to be unreasonable to see a world that doesn't yet exist.",
+      book: {
+        author: "Will Guidara",
+        title: "Unreasonable Hospitality"
+      },
+      tags: ["innovation"]
+    },
+    {
       quote: "Some things benefit from shocks; they thrive and grow when exposed to randomness, disorder and stressors, and love adventure, risk, and uncertainty. Yet, in spite of the ubiquity of the phenomenon, there is no word for the exact opposite of fragile. Let us call it antifragile.",
       book: {
         author: "Nassim Nicholas Taleb",
