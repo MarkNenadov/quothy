@@ -210,6 +210,14 @@ export const data: Quote[] = [
       tags: ["interviews"]
     },
     {
+      quote: "A leader's responsibility is to identify the strengths of the people on their team, no matter how buried those strengths may be.",
+      book: {
+        author: "Will Guidara",
+        title: "Unreasonable Hospitality"
+      },
+      tags: ["leadership"]
+    },
+    {
       quote: "if you take care of your managers and give them what they need to be successful, you put them in a better position to take care of their teams.",
       book: {
         author: "Will Guidara",
