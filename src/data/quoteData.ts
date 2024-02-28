@@ -210,6 +210,22 @@ export const data: Quote[] = [
       tags: ["interviews"]
     },
     {
+      quote: "Language is how you give intention to your intuition and how you share your vision with others. Language is how you create a culture.",
+      book: {
+        author: "Will Guidara",
+        title: "Unreasonable Hospitality"
+      },
+      tags: ["culture", "leadership"]
+    },
+    {
+      quote: "Most of the time..training makes you better at what you do. Athletes practice all day every day so their muscle memory will take over..[enabling] you to perform your tasks without needing to think about why you're doing what you're doing--which is fantastic if your job is to have an astronomical free-throw percentage. But muscle memory isn't always a good thing: training like that can be like putting on a pair of blinders. Those meticulously schooled fine-dining folks were doing what they'd always done; they weren't thinking critically about the rules they were enforcing. They weren't in any position to determine whether those rules were good ones or not. When you ask 'Why do we do it this way?' and the only answer is 'Because that's how it's always been done', the rule deserves another look. Knowing less is often an opportunity to do more.",
+      book: {
+        author: "Will Guidara",
+        title: "Unreasonable Hospitality"
+      },
+      tags: ["knowledge"]
+    },
+    {
       quote: "A leader's responsibility is to identify the strengths of the people on their team, no matter how buried those strengths may be.",
       book: {
         author: "Will Guidara",
