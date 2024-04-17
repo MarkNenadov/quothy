@@ -314,6 +314,54 @@ export const data: Quote[] = [
       tags: ["psalms"]
     },
     {
+      quote: "Therefore let us learn to hear from God in the way that it pleases him to speak to us, that is to say, when his word is preached, let us receive it peacably.",
+      book: {
+        author: "John Calvin",
+        title: "Sermons in 1 Timothy"
+      },
+      tags: ["preaching", "bible"]
+    },
+    {
+      quote: "And thus let us learn that if want good assurance, if we want our souls to be at peace and rest, we must search both the beginning and the end of our salvation in our Lord Jesus Christ. ",
+      book: {
+        author: "John Calvin",
+        title: "Sermons in 1 Timothy"
+      },
+      tags: ["jesus", "salvation", "peace", "assurance"]
+    },
+    {
+      quote: "For if we do not have Christ Jesus before our eyes, it is unprofitable for us to learn anything else about God.",
+      book: {
+        author: "John Calvin",
+        title: "Sermons in 1 Timothy"
+      },
+      tags: ["jesus", "god"]
+    },
+    {
+      quote: "For what is the Gospel, but a perfection of all wisdom",
+      book: {
+        author: "John Calvin",
+        title: "Sermons in 1 Timothy"
+      },
+      tags: ["gospel", "wisdom"]
+    },
+    {
+      quote: "The chief exercise that the children of God have is to pray",
+      book: {
+        author: "John Calvin",
+        title: "Sermons in 1 Timothy"
+      },
+      tags: ["prayer"]
+    },
+    {
+      quote: "A church body needs its members to deliberately and consciously stay connected, to circulated life, to support one another.",
+      book: {
+        author: "Barnabas Piper",
+        title: "Belong: Loving Your Church by Reflecting Christ to One Another"
+      },
+      tags: ["church", "community"]
+    },
+    {
       quote: "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",
       book: {
         author: "Martin I. Klauber",
