@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { RandomQuote } from './components/RandomQuote';
 import { ByAuthor } from './components/ByAuthor';
 import { Tab } from './components/Tab';
@@ -11,14 +11,14 @@ function App() {
   
   const [randomQuote, setRandomQuote] = useState<Quote | undefined>(undefined);
 
-  const generateRandomQuote = () => {
+  const generateRandomQuote = useCallback((data: Quote[]) => {
     const randomIndex = Math.floor(Math.random() * data.length);
     setRandomQuote(data[randomIndex]);
-  };
+  }, [setRandomQuote]);
 
   useEffect(() => {
-    generateRandomQuote();
-  }); 
+    generateRandomQuote(data);
+  }, [generateRandomQuote]); 
 
   return (
     <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
@@ -28,7 +28,7 @@ function App() {
           label="Random"
           clickHook={() => {
             setCurrentTab("random");
-            currentTab === "random" && generateRandomQuote();
+            currentTab === "random" && generateRandomQuote(data);
           }}
           isActive={currentTab === "random"}
           tabIndex={0}
