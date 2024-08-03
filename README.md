@@ -8,9 +8,9 @@ https://quotes.marknenadov.com/
 
 ## Mobile Lighthouse Scores
 
-As of Dec 16, 2023, this site has the following lighthouse scores
+As of August 3, 2024, this site has the following lighthouse scores
 
-Performance: 100
+Performance: 93
 Accessibility: 95
 Best Practices: 100
 SEO: 100
