@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { RandomQuote } from './components/RandomQuote';
-import { ByAuthor } from './components/ByAuthor';
+import { ByAuthor } from './components/author/ByAuthor';
 import { Tab } from './components/Tab';
 import { ByTopic } from './components/ByTopic';
 import { data } from './data/quoteData';
