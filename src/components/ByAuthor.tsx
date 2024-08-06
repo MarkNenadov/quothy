@@ -4,9 +4,13 @@ import {QuoteContainer} from "../components/QuoteContainer"
 import {SubText} from "../components/SubText"
 import { QuoteDisplayComponentProps } from '../baseProps';
 
+interface QuotesByAuthor { 
+  [author: string]: Quote[]
+}
+
 export const ByAuthor = ({quoteList}: QuoteDisplayComponentProps) => {
   const quotesByAuthor = useMemo(() => {
-    const groupedQuotes: { [author: string]: Quote[] } = {};
+    const groupedQuotes: QuotesByAuthor = {};
     quoteList.forEach((quote) => {
       const author = quote.book.author;
       if (!groupedQuotes[author]) {
