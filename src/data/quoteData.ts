@@ -578,6 +578,14 @@ export const data: Quote[] = [
   tags: ["acts", "new-testament"]
 },  
 {
+  quote: "The transfiguration is both forward looking and backward looking, both anticipation and retrospection, both expecation and recognition.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "The Transfiguration of Christ"
+  },
+  tags: ["jesus", "new-testament"]
+},  
+{
   quote: "For Kuyper, ideological hegemony was not merely irrational—it was blasphemous. For, Kuyper declared, whenever religious freedom is crushed, 'God’s name' is 'robbed of its splendor.'",
   book: {
     author: "Matthew Kaemingk",
