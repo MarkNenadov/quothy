@@ -24,6 +24,7 @@ export const ByAuthor = ({quoteList}: QuoteDisplayComponentProps) => {
     <>
       {Object.entries(quotesByAuthor).map(([author, quotes]) => (
         <AuthorQuotes
+          key={author}
           author={author}
           quotes={quotes}
         />
