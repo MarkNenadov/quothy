@@ -1,19 +1,21 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import { Quote } from '../models/quotes';
 import {QuoteContainer} from "../components/QuoteContainer"
 import {SubText} from "../components/SubText"
 import { QuoteDisplayComponentProps } from '../baseProps';
 
 export const ByAuthor = ({quoteList}: QuoteDisplayComponentProps) => {
-  const quotesByAuthor: { [author: string]: Quote[] } = {};
-  
-  quoteList.forEach((quote) => {
-    const author = quote.book.author;
-    if (!quotesByAuthor[author]) {
-      quotesByAuthor[author] = [];
-    }
-    quotesByAuthor[author].push(quote);
-  });
+  const quotesByAuthor = useMemo(() => {
+    const groupedQuotes: { [author: string]: Quote[] } = {};
+    quoteList.forEach((quote) => {
+      const author = quote.book.author;
+      if (!groupedQuotes[author]) {
+        groupedQuotes[author] = [];
+      }
+      groupedQuotes[author].push(quote);
+    });
+    return groupedQuotes;
+  }, [quoteList]);
 
   return (
     <>
