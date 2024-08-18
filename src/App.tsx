@@ -22,10 +22,10 @@ function App() {
 
   return (
     <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
-      <h2 className="bold text-5xl p-3">Quothy</h2>
+      <h2 className="bold text-5xl p-3">✌ Quothy ✌</h2>
       <div className="flex flex-row justify-between">
         <Tab 
-          label="Random"
+          label="🎲 Random"
           clickHook={() => {
             setCurrentTab("random");
             currentTab === "random" && generateRandomQuote(data);
@@ -34,13 +34,13 @@ function App() {
           tabIndex={0}
         />
         <Tab 
-          label="By Author"
+          label="✍️ By Author"
           clickHook={() => setCurrentTab("author")}
           isActive={currentTab === "author"}
           tabIndex={1}
         />
         <Tab 
-          label="By Topic"
+          label="📚 By Topic"
           clickHook={() => setCurrentTab("topic")}
           isActive={currentTab === "topic"}
           tabIndex={2}
