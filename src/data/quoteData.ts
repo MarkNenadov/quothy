@@ -154,6 +154,30 @@ export const data: Quote[] = [
       tags: ["birding", "mind", "psychology"]
     },
     {
+      quote: "So, to become a supercommunicator, all we need to do is listen closely to what is said and unsaid, ask the right questions, recognize and match others' moods, and make our own feelings easy for others to perceive.",
+      book: {
+        author: "Charles Duhigg",
+        title: "Supercommunicators: How to Unlock the Secret Language of Connection"
+      },
+      tags: ["communication"]
+    },
+    {
+      quote: "Deep questions are particularly good at creating intimacy because they ask people to describe their beliefs, values, feelings, and experiences in ways that can reveal something vulnerable.",
+      book: {
+        author: "Charles Duhigg",
+        title: "Supercommunicators: How to Unlock the Secret Language of Connection"
+      },
+      tags: ["communication"]
+    },
+    {
+      quote: "Be a shock absorber for the team, allowing them to focus on their day-to-day work and building trust for streamlined workflow.",
+      book: {
+        author: "Akanksha Gupta",
+        title: "Think Like a Software Engineering Manager"
+      },
+      tags: ["leadership", "management"]
+    },
+    {
       quote: "We should not make the mistake of thinking the difference between the Creator and the creature is simply a difference in size. To do so is to assume God can be measured, as if he were merely a bigger version of ourselves. I call this the superhero syndrome. Christians like to think of God as their superhero, like us but with superpowers. But that is a terribly unbiblical portrayal of God’s infinite nature. He is not a God who simply possesses our powers but in endless measure. No, an infinite God transcends our characteristics altogether.",
       book: {
         author: "Michael Barrett",
@@ -570,6 +594,14 @@ export const data: Quote[] = [
   tags: ["apostle-paul", "anxiety"]
 },  
 {
+  quote: "A truly gospel-humble person is not a self-hating person or a self-loving person, but a gospel-humble person.",
+  book: {
+    author: "Timothy Keller",
+    title: "The Freedom of Self-Forgetfulness"
+  },
+  tags: ["humility"]
+},  
+{
   quote: "it is best to see the genre of Acts as somewhat fluid and approach the book through the lens of multiple genres",
   book: {
     author: "Patrick Schreiner",
@@ -579,6 +611,38 @@ export const data: Quote[] = [
 },  
 {
   quote: "The transfiguration is both forward looking and backward looking, both anticipation and retrospection, both expecation and recognition.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "The Transfiguration of Christ"
+  },
+  tags: ["jesus", "new-testament"]
+},  
+{
+  quote: "The transfiguration is a well deep beyond imagining. When we think we have hit rock bottom, a new spring appears. When we thinjk we have exhausted the meaning of the passage, a new depth opens. When we think we hvae understood the implications, a new mystery arises.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "The Transfiguration of Christ"
+  },
+  tags: ["jesus", "new-testament"]
+},  
+{
+  quote: "The cross and the transfiguration are not two competing visions but two complementary pictures of the Messiah.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "The Transfiguration of Christ"
+  },
+  tags: ["jesus", "new-testament"]
+},  
+{
+  quote: "In some ways, the cross is the reverse of the transfiguration. One shows us Jesus's ultimate disgrace, and the other his ultimate honor. While the face of Christ bore shame at his passion as he was spit on, beaten, and pierced with thorns, his face brightened with honor at the transfiguration.",
+  book: {
+    author: "Patrick Schreiner",
+    title: "The Transfiguration of Christ"
+  },
+  tags: ["jesus", "new-testament"]
+},  
+{
+  quote: "We are tempted to think that Jesus's divinity overcomes his humanity, that this veil of flesh is vanquished for a moment. The transfiguration corrects us. God perfects flesh; he doesn't destroy it...The Son takes on flesh without any alternation of his divinity, bnut in so doing he perfects and sanctifies it. The transfiguration does not move us past Jesus's humanity: it reveals to us how the flesh will be glorified.",
   book: {
     author: "Patrick Schreiner",
     title: "The Transfiguration of Christ"
