@@ -170,6 +170,14 @@ export const data: Quote[] = [
       tags: ["communication"]
     },
     {
+      quote: "Beware the simple question: 'Is this possible?' In softwre, everything is possible but nothing is free.",
+      book: {
+        author: "Ryan Singer",
+        title: "Shape Up: Stop Running in Circles and Ship Work that Matters"
+      },
+      tags: ["software"]
+    },
+    {
       quote: "Be a shock absorber for the team, allowing them to focus on their day-to-day work and building trust for streamlined workflow.",
       book: {
         author: "Akanksha Gupta",
