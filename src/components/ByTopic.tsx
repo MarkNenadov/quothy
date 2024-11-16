@@ -1,8 +1,7 @@
 import React from 'react';
 import { Quote } from '../models/quotes';
-import { QuoteContainer } from './QuoteContainer';
-import { SubText } from './SubText';
 import { QuoteDisplayComponentProps } from '../baseProps';
+import { TopicView } from './TopicView';
 
 export const ByTopic = ({quoteList}: QuoteDisplayComponentProps) => {
   const quotesByTag: { [tag: string]: Quote[] } = {};
@@ -20,20 +19,7 @@ export const ByTopic = ({quoteList}: QuoteDisplayComponentProps) => {
   return (
     <div className="text-2xl p-1 md:p-4">
       {Object.entries(quotesByTag).map(([tag, quotes]) => (
-        <div key={tag} className="m-5">
-          <h2>{tag}</h2>
-          {quotes.map((quote, index) => (
-            <QuoteContainer key={index}>
-              <div className="">"{quote.quote}"</div>
-              <SubText>
-                 {quote.book.title}
-              </SubText>
-              <SubText>
-                 {quote.book.author}
-              </SubText>
-           </QuoteContainer>
-          ))}
-        </div>
+        <TopicView tag={tag} quotes={quotes} />
       ))}
     </div>
   );
