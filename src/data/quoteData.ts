@@ -322,6 +322,14 @@ export const data: Quote[] = [
       tags: ["joy", "christian-living"]
     },
     {
+      quote: "We need design--not just as a service to make our product beautiful--but to discover the right product.",
+      book: {
+        author: "Marty Cagan",
+        title: "Inspired: How to Create Tech Products Customers Love"
+      },
+      tags: ["design", "product-management"]
+    },
+    {
       quote: "Being a seeker is a mindset, one that forces you to grow. I never settled for safe. I never did what has been done before...If I was getting bored or complacent, I changed things up. I never trained with my equals...I worked out with people who were bigger, stronger, or faster, or had something new to teach me. It's the best way to improve.",
       book: {
         author: "Hayley Wickenheiser",
