@@ -322,6 +322,14 @@ export const data: Quote[] = [
       tags: ["joy", "christian-living"]
     },
     {
+      quote: "For strange effects and extraordinary combinations we must go to life itself, which is always far more daring than any effort of the imagination.",
+      book: {
+        author: "Sherlock Holmes",
+        title: "The Red-Headed League",
+      },
+      tags: ["joy", "christian-living"]
+    },
+    {
       quote: "We need design--not just as a service to make our product beautiful--but to discover the right product.",
       book: {
         author: "Marty Cagan",
