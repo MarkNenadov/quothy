@@ -19,7 +19,7 @@ export const ByTopic = ({quoteList}: QuoteDisplayComponentProps) => {
   return (
     <div className="text-2xl p-1 md:p-4">
       {Object.entries(quotesByTag).map(([tag, quotes]) => (
-        <TopicView tag={tag} quotes={quotes} />
+        <TopicView key={tag} tag={tag} quotes={quotes} />
       ))}
     </div>
   );
