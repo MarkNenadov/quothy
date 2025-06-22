@@ -13,7 +13,7 @@ export const AuthorQuotes = ({quotes, author }: AuthorQuotesProps) => (
         { (!quotes || quotes.length === 0 ) ? <p>No quotes available.</p> : null }
         {quotes.map((quote, index) => (
             <QuoteContainer key={index}>
-            <div>"{quote.quote}"</div>
+            <div>&ldquo;{quote.quote}&rdquo;</div>
             <SubText>{quote.book.title}</SubText>
             </QuoteContainer>
         ))}

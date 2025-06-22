@@ -1,12 +1,14 @@
-import { useEffect, useState, useCallback } from 'react';
-import { RandomQuote } from './components/RandomQuote';
-import { ByAuthor } from './components/author/ByAuthor';
-import { Tab } from './components/Tab';
-import { ByTopic } from './components/ByTopic';
-import { data } from './data/quoteData';
-import { Quote } from './models/quotes'
+'use client';
 
-function App() {
+import { useEffect, useState, useCallback } from 'react';
+import { RandomQuote } from '../components/RandomQuote';
+import { ByAuthor } from '../components/author/ByAuthor';
+import { Tab } from '../components/Tab';
+import { ByTopic } from '../components/ByTopic';
+import { data } from '../data/quoteData';
+import { Quote } from '../models/quotes'
+
+export default function Home() {
   const [currentTab, setCurrentTab] = useState("random")
   
   const [randomQuote, setRandomQuote] = useState<Quote | undefined>(undefined);
@@ -28,7 +30,9 @@ function App() {
           label="🎲 Random"
           clickHook={() => {
             setCurrentTab("random");
-            currentTab === "random" && generateRandomQuote(data);
+            if (currentTab === "random") {
+              generateRandomQuote(data);
+            }
           }}
           isActive={currentTab === "random"}
           tabIndex={0}
@@ -56,7 +60,7 @@ function App() {
         currentTab === "topic" && <ByTopic quoteList={data} />
       }
       <div className="text-sm text-center pt-2">
-        {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses React, Typescript, Bun, and TailwindCSS. You can see the source on 
+        {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses Next.js, Typescript, and TailwindCSS. You can see the source on 
         &nbsp;<a 
           className="underline text-blue-800" 
           href={"https://github.com/MarkNenadov/quothy"}
@@ -68,5 +72,3 @@ function App() {
     </div>
   );  
 }
-
-export default App;

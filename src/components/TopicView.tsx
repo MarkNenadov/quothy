@@ -15,7 +15,7 @@ export const TopicView = (props: TopicViewProps) => {
         <h2>{tag}</h2>
         {quotes.map((quote, index) => (
           <QuoteContainer key={index}>
-            <div className="">"{quote.quote}"</div>
+            <div className="">&ldquo;{quote.quote}&rdquo;</div>
             <SubText>
                {quote.book.title}
             </SubText>

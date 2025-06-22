@@ -18,7 +18,7 @@ export const RandomQuote = ( {randomQuote}: RandomQuoteProps ) => {
           className="m-5"
         >
           <div>
-            "{randomQuote.quote}"
+            &ldquo;{randomQuote.quote}&rdquo;
           </div>
           <SubText>{randomQuote.book.author}</SubText>
           <SubText>{randomQuote.book.title}</SubText>
