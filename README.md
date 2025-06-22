@@ -1,13 +1,16 @@
+"Quothy"
+
 This is a [Next.js](https://nextjs.org) (React/Typescript/Tailwind) project displaying book quotes.
+
+https://quotes.marknenadov.com/
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server with bun (or npm/yarn):
 
 ```bash
+bun install
 bun run dev
 ```
 
-(or npm/yarn if you prefer)
-
-Open [http://localhost:3000](http://localhost:3000
+Open http://localhost:3000
