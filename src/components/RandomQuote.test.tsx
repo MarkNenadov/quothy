@@ -57,7 +57,7 @@ describe('RandomQuote', () => {
     const quoteText = screen.getByText(/This is a test quote/i);
     expect(quoteText).toBeInTheDocument();
     
-    // Check that the quote is wrapped in quotes
-    expect(quoteText.textContent).toContain('"This is a test quote"');
+    // Check that the quote is wrapped in curly quotes
+    expect(quoteText.textContent).toContain('“This is a test quote”');
   });
 }); 
