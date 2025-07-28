@@ -10,6 +10,14 @@ export const data: Quote[] = [
     tags: ["birding"]
   },
   {
+    quote: "Attraction to fear is a kind of hunger.",
+    book: {
+      author: "Stephen S. Hall",
+      title: "Slither: How Nature's Most Maligned Creatures Illuminate Our World"
+    },
+    tags: ["fear"]
+  },
+  {
     quote: "One of the most ironic paradoxes of our time is this great availability of leisure that somehow fails to be translated into enjoyment. Compared to people living only a few generations ago, we have enormously greater opportunities to have a good time, yet there is no indication that we actually enjoy life more than our ancestors did. Opportunities alone, however, are not enough. We also need the skills to make use of them. And we need to know how to control consciousness—a skill that most people have not learned to cultivate. Surrounded by an astounding panoply of recreational gadgets and leisure choices, most of us go on being bored and vaguely frustrated.",
     book: {
       author: "Mihaly Csikszentmihalyi",
