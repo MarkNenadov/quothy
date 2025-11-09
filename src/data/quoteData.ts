@@ -18,6 +18,14 @@ export const data: Quote[] = [
     tags: ["fear"]
   },
   {
+    quote: "The Christian family doesn't just think theologically on Sundays; it does theology from Sunday to Sunday.",
+    book: {
+      author: "Paul David Tripp",
+      title: "Age of Opportunity: A Biblical Guide to Parenting Teens"
+    },
+    tags: ["parenting", "theology"]
+  },
+  {
     quote: "One of the most ironic paradoxes of our time is this great availability of leisure that somehow fails to be translated into enjoyment. Compared to people living only a few generations ago, we have enormously greater opportunities to have a good time, yet there is no indication that we actually enjoy life more than our ancestors did. Opportunities alone, however, are not enough. We also need the skills to make use of them. And we need to know how to control consciousness—a skill that most people have not learned to cultivate. Surrounded by an astounding panoply of recreational gadgets and leisure choices, most of us go on being bored and vaguely frustrated.",
     book: {
       author: "Mihaly Csikszentmihalyi",
