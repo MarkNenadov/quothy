@@ -18,7 +18,7 @@ export const data: Quote[] = [
     tags: ["fear"]
   },
   {
-    quote: "though [Jerry Garcia] abhored violance and abjured pain, he enjoyed a certain amount of chaos",
+    quote: "though [Jerry Garcia] abhored violance and abjured pain, he enjoyed a certain amount of chaos. The bitter aftermath of Altamont [Free Concert] might have sunk some people, might have torn apart a less tested band. Instead, the Dead bolted out of Altamont and produced not one but two landmark albums in less than a year.",
     book: {
       author: "Jim Newton",
       title: "Here Beside the Rising Tide: Jerry Garcia, the Grateful Dead, and an American Awakening"
