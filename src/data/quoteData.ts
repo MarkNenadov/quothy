@@ -18,6 +18,14 @@ export const data: Quote[] = [
     tags: ["fear"]
   },
   {
+    quote: "though [Jerry Garcia] abhored violance and abjured pain, he enjoyed a certain amount of chaos",
+    book: {
+      author: "Jim Newton",
+      title: "Here Beside the Rising Tide: Jerry Garcia, the Grateful Dead, and an American Awakening"
+    },
+    tags: ["grateful-dead", "jerry-garcia"]
+  },
+  {
     quote: "The Christian family doesn't just think theologically on Sundays; it does theology from Sunday to Sunday.",
     book: {
       author: "Paul David Tripp",
