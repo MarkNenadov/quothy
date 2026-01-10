@@ -282,6 +282,14 @@ export const data: Quote[] = [
       tags: ["fungi"]
     },
     {
+      quote: "Perhaps the most significant symbol of 1943 Detroit was its police department, generally credited at the time with being one of the most bigoted in the North. The ranks of police officers were swelled by an exceptionally high number of white southerners, while the less than two percent of the force who were Negros were generally assigned only to two precincts..",
+      book: {
+        author: "Hubert Locke",
+        title: "The Detroit Riot of 1967"
+      },
+      tags: ["detroit", "civil-rights"]
+    },
+    {
       quote: "Psalms were at the heart of monastic liturgy and would remain so for Protestants, not least in France.",
       book: {
         author: "Geoffrey Treasure",
