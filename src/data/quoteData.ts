@@ -306,6 +306,14 @@ export const data: Quote[] = [
       tags: ["lichen", "wildlife"]
     },
     {
+      quote: "The relationships between plants and mycorrhizal fungi are key to understanding how ecosystems work...I became dizzy when I thought about what was going on underground. Plants and mycorrhizal fungi are promiscuous: many fungi can live within the roots of a single plant and many plants can connect with a single fungal network. In this way a variety of substances, from nutrients to signaling compounds, can pass between plants via fungal connnections. In simple terms, plants are socially networked by fungi. This is what is mean by the 'wood wide web.'",
+      book: {
+        author: "Merlin Sheldrake",
+        title: "Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures"
+      },
+      tags: ["fungi", "wildlife"]
+    },
+    {
       quote: "poems are like pieces of music: by definition they all have something in common, but they vary widely in how they work, where they come from, and what they try to do. Varied readers like various poems for various reasons",
       book: {
         author: "Stephanie Burt",
