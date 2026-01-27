@@ -298,6 +298,22 @@ export const data: Quote[] = [
       tags: ["huguenots", "psalms", "french-reformation"]
     },
     {
+      quote: "Lichens are small biospheres that include both photosynthetic and non-photosynthetic organisms, thus combining the Earth's main metabolic processes. Lichens are in some sense, micro-plents--worlds writ small.",
+      book: {
+        author: "Merlin Sheldrake",
+        title: "Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures"
+      },
+      tags: ["lichen", "wildlife"]
+    },
+    {
+      quote: "poems are like pieces of music: by definition they all have something in common, but they vary widely in how they work, where they come from, and what they try to do. Varied readers like various poems for various reasons",
+      book: {
+        author: "Stephanie Burt",
+        title: "Don't Read Poetry"
+      },
+      tags: ["poetry"]
+    },
+    {
       quote: "Most of the time..training makes you better at what you do. Athletes practice all day every day so their muscle memory will take over..[enabling] you to perform your tasks without needing to think about why you're doing what you're doing--which is fantastic if your job is to have an astronomical free-throw percentage. But muscle memory isn't always a good thing: training like that can be like putting on a pair of blinders. Those meticulously schooled fine-dining folks were doing what they'd always done; they weren't thinking critically about the rules they were enforcing. They weren't in any position to determine whether those rules were good ones or not. When you ask 'Why do we do it this way?' and the only answer is 'Because that's how it's always been done', the rule deserves another look. Knowing less is often an opportunity to do more.",
       book: {
         author: "Will Guidara",
