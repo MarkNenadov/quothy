@@ -319,7 +319,23 @@ export const data: Quote[] = [
         author: "Tim Chester",
         title: "Hosea: The Passion of God"
       },
-      tags: ["hosea", "old-testament", "bibleß"]
+      tags: ["hosea", "old-testament", "bible", "sin"]
+    },
+    {
+      quote: "God always seeks the best for His people and that best is Himself.",
+      book: {
+        author: "Tim Chester",
+        title: "Hosea: The Passion of God"
+      },
+      tags: ["hosea", "old-testament", "bible", "god"]
+    },
+    {
+      quote: "If you look at a large quantity of data long enough, a huge amount of patterns will emerge.",
+      book: {
+        author: "Benjamin Graham",
+        title: "The Intelligent Investor"
+      },
+      tags: ["investing", "finance"]
     },
     {
       quote: "The relationships between plants and mycorrhizal fungi are key to understanding how ecosystems work...I became dizzy when I thought about what was going on underground. Plants and mycorrhizal fungi are promiscuous: many fungi can live within the roots of a single plant and many plants can connect with a single fungal network. In this way a variety of substances, from nutrients to signaling compounds, can pass between plants via fungal connnections. In simple terms, plants are socially networked by fungi. This is what is mean by the 'wood wide web.'",
