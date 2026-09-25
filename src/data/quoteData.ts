@@ -194,7 +194,7 @@ export const data: Quote[] = [
       tags: ["communication"]
     },
     {
-      quote: "Beware the simple question: 'Is this possible?' In softwre, everything is possible but nothing is free.",
+      quote: "Beware the simple question: 'Is this possible?' In software, everything is possible but nothing is free.",
       book: {
         author: "Ryan Singer",
         title: "Shape Up: Stop Running in Circles and Ship Work that Matters"
