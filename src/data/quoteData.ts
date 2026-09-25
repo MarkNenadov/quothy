@@ -754,7 +754,7 @@ export const data: Quote[] = [
   tags: ["jesus", "new-testament"]
 },  
 {
-  quote: "The transfiguration is a well deep beyond imagining. When we think we have hit rock bottom, a new spring appears. When we thinjk we have exhausted the meaning of the passage, a new depth opens. When we think we hvae understood the implications, a new mystery arises.",
+  quote: "The transfiguration is a well deep beyond imagining. When we think we have hit rock bottom, a new spring appears. When we think we have exhausted the meaning of the passage, a new depth opens. When we think we have understood the implications, a new mystery arises.",
   book: {
     author: "Patrick Schreiner",
     title: "The Transfiguration of Christ"
