@@ -100,7 +100,7 @@ export const data: Quote[] = [
   {
     quote: "O powerful love! that in some respects, makes a beast a man; in some other a man a beast.",
     book: {
-      author: "Wlliam Shakespeare",
+      author: "William Shakespeare",
       title: "The Merry Wives of Windsor"
     },
     tags: ["love", "shakespeare"]
@@ -108,7 +108,7 @@ export const data: Quote[] = [
   {
     quote: "the world's mine oyster, Which I with sword will open.",
     book: {
-      author: "Wlliam Shakespeare",
+      author: "William Shakespeare",
       title: "The Merry Wives of Windsor"
     },
     tags: ["shakespeare"]
