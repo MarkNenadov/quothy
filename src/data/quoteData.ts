@@ -159,7 +159,7 @@ export const data: Quote[] = [
         author: "Nicolas Alford and Nicholas Kennicott",
         title: "In Praise of Old Guys: Pastoral Mentorship, Humility, and the Dangers of Youth"
       },
-      tags: ["church-leadership", "holy spirit"]
+      tags: ["church-leadership", "holy-spirit"]
     },
     {
       quote: "Christianity is discipleship, at its very core (Matthew 28:19, Titus 2). You should always be discipling others, and you should always be being discipled. Don’t settle for a casual relationship that soothes your conscience; engage Christ’s discipleship call like you really believe the Son of God is the one who told you to do it. This is a concept with a rich biblical pedigree. In 2 Timothy 2:2 there are actually five distinct parties involved in mentorship. There is the core mentor/mentee rela-tionship of Paul and Timothy. This is happening in the context of 'many witnesses,' a reference to the local church. Furthermore, Paul charges Timothy to take up the dis-cipleship baton and entrust it to 'faithful men.' But even then the discipleship chain reaction isn’t finished: those faithful men are to be poured into so that they 'will be able to teach others also.' Paul’s vision for pastoral training is multigenerational mentorship in the context of the local church.",
@@ -343,7 +343,7 @@ export const data: Quote[] = [
         author: "John Owen",
         title: "The Holy Spirit: His Gifts and Power"
       },
-      tags: ["holy spirit", "theology"]
+      tags: ["holy-spirit", "theology"]
     },
     {
       quote: "The relationships between plants and mycorrhizal fungi are key to understanding how ecosystems work...I became dizzy when I thought about what was going on underground. Plants and mycorrhizal fungi are promiscuous: many fungi can live within the roots of a single plant and many plants can connect with a single fungal network. In this way a variety of substances, from nutrients to signaling compounds, can pass between plants via fungal connnections. In simple terms, plants are socially networked by fungi. This is what is mean by the 'wood wide web.'",

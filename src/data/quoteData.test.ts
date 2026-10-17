@@ -9,4 +9,12 @@ describe('quoteData', () => {
 
     expect(titlesWithMultipleAuthors).toEqual([]);
   });
+
+  test('tags are kebab-case', () => {
+    const kebabCase = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+    const invalidTags = [...new Set(data.flatMap((quote) => quote.tags))]
+      .filter((tag) => !kebabCase.test(tag));
+
+    expect(invalidTags).toEqual([]);
+  });
 });
