@@ -276,7 +276,7 @@ export const data: Quote[] = [
     {
       quote: "The difference between animals and fungi is simple: animals put food in their bodies, whereas fungi put their bodies in the food.",
       book: {
-        author: "Martin Sheldrake",
+        author: "Merlin Sheldrake",
         title: "Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures"
       },
       tags: ["fungi"]
