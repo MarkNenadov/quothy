@@ -482,7 +482,7 @@ export const data: Quote[] = [
       tags: ["preaching", "bible"]
     },
     {
-      quote: "And thus let us learn that if want good assurance, if we want our souls to be at peace and rest, we must search both the beginning and the end of our salvation in our Lord Jesus Christ. ",
+      quote: "And thus let us learn that if want good assurance, if we want our souls to be at peace and rest, we must search both the beginning and the end of our salvation in our Lord Jesus Christ.",
       book: {
         author: "John Calvin",
         title: "Sermons in 1 Timothy"

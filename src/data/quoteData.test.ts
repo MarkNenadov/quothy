@@ -17,4 +17,24 @@ describe('quoteData', () => {
 
     expect(invalidTags).toEqual([]);
   });
+
+  test('no quote appears twice', () => {
+    const quoteTexts = data.map((quote) => quote.quote);
+    const duplicates = quoteTexts.filter((text, index) => quoteTexts.indexOf(text) !== index);
+
+    expect(duplicates).toEqual([]);
+  });
+
+  test('every quote has at least one tag', () => {
+    const untagged = data.filter((quote) => quote.tags.length === 0).map((quote) => quote.quote);
+
+    expect(untagged).toEqual([]);
+  });
+
+  test('no text field has leading or trailing whitespace', () => {
+    const textFields = data.flatMap((quote) => [quote.quote, quote.book.title, quote.book.author, ...quote.tags]);
+    const untrimmed = textFields.filter((text) => text !== text.trim());
+
+    expect(untrimmed).toEqual([]);
+  });
 });
