@@ -1,73 +1,73 @@
-import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
-import { QuoteContainer } from './QuoteContainer';
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { QuoteContainer } from "./QuoteContainer";
 
-describe('QuoteContainer', () => {
-  test('renders children content', () => {
+describe("QuoteContainer", () => {
+  test("renders children content", () => {
     render(
       <QuoteContainer>
         <div>Test content</div>
-      </QuoteContainer>
+      </QuoteContainer>,
     );
-    
-    expect(screen.getByText('Test content')).toBeInTheDocument();
+
+    expect(screen.getByText("Test content")).toBeInTheDocument();
   });
 
-  test('applies custom text style when provided', () => {
+  test("applies custom text style when provided", () => {
     render(
       <QuoteContainer textStyle="text-xl font-bold">
         <div>Styled content</div>
-      </QuoteContainer>
+      </QuoteContainer>,
     );
-    
-    const container = screen.getByText('Styled content').parentElement;
-    expect(container).toHaveClass('text-xl');
-    expect(container).toHaveClass('font-bold');
+
+    const container = screen.getByText("Styled content").parentElement;
+    expect(container).toHaveClass("text-xl");
+    expect(container).toHaveClass("font-bold");
   });
 
-  test('applies default styles when no text style provided', () => {
+  test("applies default styles when no text style provided", () => {
     render(
       <QuoteContainer>
         <div>Default content</div>
-      </QuoteContainer>
+      </QuoteContainer>,
     );
-    
-    const container = screen.getByText('Default content').parentElement;
-    expect(container).toHaveClass('bg-surface');
-    expect(container).toHaveClass('p-4');
-    expect(container).toHaveClass('w-full');
+
+    const container = screen.getByText("Default content").parentElement;
+    expect(container).toHaveClass("bg-surface");
+    expect(container).toHaveClass("p-4");
+    expect(container).toHaveClass("w-full");
   });
 
-  test('calls onClick handler when provided and clicked', () => {
+  test("calls onClick handler when provided and clicked", () => {
     const mockOnClick = jest.fn();
-    
+
     render(
       <QuoteContainer onClick={mockOnClick}>
         <div>Clickable content</div>
-      </QuoteContainer>
+      </QuoteContainer>,
     );
-    
-    const container = screen.getByText('Clickable content').parentElement;
+
+    const container = screen.getByText("Clickable content").parentElement;
     fireEvent.click(container!);
-    
+
     expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 
-  test('does not call onClick when not provided', () => {
+  test("does not call onClick when not provided", () => {
     render(
       <QuoteContainer>
         <div>Non-clickable content</div>
-      </QuoteContainer>
+      </QuoteContainer>,
     );
-    
-    const container = screen.getByText('Non-clickable content').parentElement;
+
+    const container = screen.getByText("Non-clickable content").parentElement;
     fireEvent.click(container!);
-    
+
     // Should not throw any errors
     expect(container).toBeInTheDocument();
   });
 
-  test('renders complex nested content', () => {
+  test("renders complex nested content", () => {
     render(
       <QuoteContainer textStyle="text-lg">
         <div>
@@ -75,11 +75,11 @@ describe('QuoteContainer', () => {
           <p>Paragraph content</p>
           <span>Inline text</span>
         </div>
-      </QuoteContainer>
+      </QuoteContainer>,
     );
-    
-    expect(screen.getByText('Title')).toBeInTheDocument();
-    expect(screen.getByText('Paragraph content')).toBeInTheDocument();
-    expect(screen.getByText('Inline text')).toBeInTheDocument();
+
+    expect(screen.getByText("Title")).toBeInTheDocument();
+    expect(screen.getByText("Paragraph content")).toBeInTheDocument();
+    expect(screen.getByText("Inline text")).toBeInTheDocument();
   });
-}); 
+});

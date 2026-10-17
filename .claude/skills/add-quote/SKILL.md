@@ -28,14 +28,14 @@ description: Add one or more book quotes to Quothy's src/data/quoteData.ts, reus
      quote: "…",
      book: {
        author: "…",
-       title: "…"
+       title: "…",
      },
-     tags: ["…"]
+     tags: ["…"],
    },
    ```
 
    Trim leading and trailing whitespace, including non-breaking spaces from pasted text.
 
-6. **Validate** with `bun run test src/data`. Fix any failure before finishing.
+6. **Format and validate** with `bun run format` then `bun run test src/data`. Fix any failure before finishing.
 
 7. **Commit** only if the user asks, as `add quote` (or `add N quotes`).

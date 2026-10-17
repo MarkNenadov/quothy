@@ -28,15 +28,16 @@ bun run dev
 
 Open http://localhost:3000.
 
-| Script | What it does |
-| --- | --- |
-| `bun run dev` | Start the dev server |
-| `bun run test` | Run the test suite |
+| Script              | What it does          |
+| ------------------- | --------------------- |
+| `bun run dev`       | Start the dev server  |
+| `bun run test`      | Run the test suite    |
 | `bun run typecheck` | Type-check with `tsc` |
-| `bun run lint` | Lint with ESLint |
-| `bun run build` | Production build |
+| `bun run lint`      | Lint with ESLint      |
+| `bun run format`    | Format with Prettier  |
+| `bun run build`     | Production build      |
 
-CI runs typecheck, lint, tests and build on every push and pull request.
+CI checks formatting and runs typecheck, lint, tests and build on every push and pull request.
 
 ## Adding a quote
 
@@ -47,9 +48,9 @@ Quotes live in [`src/data/quoteData.ts`](src/data/quoteData.ts). Append an entry
   quote: "The quote, verbatim.",
   book: {
     author: "Author Name",
-    title: "Book Title"
+    title: "Book Title",
   },
-  tags: ["existing-tag", "another-tag"]
+  tags: ["existing-tag", "another-tag"],
 },
 ```
 

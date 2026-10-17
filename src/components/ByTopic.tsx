@@ -1,14 +1,14 @@
-import React from 'react';
-import { Quote } from '../models/quotes';
-import { TopicView } from './TopicView';
+import React from "react";
+import { Quote } from "../models/quotes";
+import { TopicView } from "./TopicView";
 
 interface ByTopicProps {
   quoteList: Quote[];
 }
 
-export const ByTopic = ({quoteList}: ByTopicProps) => {
+export const ByTopic = ({ quoteList }: ByTopicProps) => {
   const quotesByTag: { [tag: string]: Quote[] } = {};
-  
+
   quoteList.forEach((quote) => {
     const tags = quote.tags;
     tags.forEach((tag) => {

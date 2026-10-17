@@ -1,11 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import Home from './page';
+import { render, screen } from "@testing-library/react";
+import Home from "./page";
 
-jest.mock('next/server', () => ({
+jest.mock("next/server", () => ({
   connection: jest.fn(),
 }));
 
-jest.mock('../data/quoteData', () => ({
+jest.mock("../data/quoteData", () => ({
   data: [
     {
       quote: "The only quote",
@@ -15,8 +15,8 @@ jest.mock('../data/quoteData', () => ({
   ],
 }));
 
-describe('Home', () => {
-  test('server-renders a random quote without waiting for the client', async () => {
+describe("Home", () => {
+  test("server-renders a random quote without waiting for the client", async () => {
     render(await Home());
 
     expect(screen.getByText(/The only quote/)).toBeInTheDocument();

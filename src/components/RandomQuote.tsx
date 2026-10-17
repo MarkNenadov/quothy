@@ -1,42 +1,42 @@
-import React, { useState } from 'react';
-import {Quote} from '../models/quotes'
-import {QuoteContainer} from "../components/QuoteContainer"
-import {QuoteFigure} from "../components/QuoteFigure"
+import React, { useState } from "react";
+import { Quote } from "../models/quotes";
+import { QuoteContainer } from "../components/QuoteContainer";
+import { QuoteFigure } from "../components/QuoteFigure";
 
 const COPIED_FEEDBACK_MS = 2000;
 
 interface RandomQuoteProps {
-  randomQuote?: Quote
-  onAnotherQuote: () => void
+  randomQuote?: Quote;
+  onAnotherQuote: () => void;
 }
 
 interface ActionButtonProps {
-  label: string
-  clickHook: () => void
+  label: string;
+  clickHook: () => void;
 }
 
-const ActionButton = ({label, clickHook}: ActionButtonProps) => (
+const ActionButton = ({ label, clickHook }: ActionButtonProps) => (
   <button
     type="button"
     className="cursor-pointer px-3 py-1 text-sm md:text-base bg-surface-strong border border-line rounded-md"
     onClick={clickHook}
   >
-    { label }
+    {label}
   </button>
 );
 
-export const RandomQuote = ( {randomQuote, onAnotherQuote}: RandomQuoteProps ) => {
+export const RandomQuote = ({ randomQuote, onAnotherQuote }: RandomQuoteProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const copyQuote = async (quote: Quote) => {
-    await navigator.clipboard.writeText("\"" + quote.quote + "\" - " + quote.book.author);
+    await navigator.clipboard.writeText('"' + quote.quote + '" - ' + quote.book.author);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), COPIED_FEEDBACK_MS);
   };
 
   return (
     <QuoteContainer textStyle="text-xl md:text-2xl">
-            {randomQuote && (
+      {randomQuote && (
         <div className="m-5">
           <QuoteFigure quote={randomQuote} />
           <div className="flex justify-end gap-2 mt-4">
@@ -47,4 +47,4 @@ export const RandomQuote = ( {randomQuote, onAnotherQuote}: RandomQuoteProps ) =
       )}
     </QuoteContainer>
   );
-}
+};

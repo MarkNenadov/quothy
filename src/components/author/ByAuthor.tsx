@@ -1,16 +1,16 @@
-import React, {useMemo} from 'react';
-import { Quote } from '../../models/quotes';
-import { AuthorQuotes } from './AuthorQuotes';
+import React, { useMemo } from "react";
+import { Quote } from "../../models/quotes";
+import { AuthorQuotes } from "./AuthorQuotes";
 
-interface QuotesByAuthor { 
-  [author: string]: Quote[]
+interface QuotesByAuthor {
+  [author: string]: Quote[];
 }
 
 interface ByAuthorProps {
   quoteList: Quote[];
 }
 
-export const ByAuthor = ({quoteList}: ByAuthorProps) => {
+export const ByAuthor = ({ quoteList }: ByAuthorProps) => {
   const quotesByAuthor = useMemo(() => {
     const groupedQuotes: QuotesByAuthor = {};
     quoteList.forEach((quote) => {
@@ -26,11 +26,7 @@ export const ByAuthor = ({quoteList}: ByAuthorProps) => {
   return (
     <>
       {Object.entries(quotesByAuthor).map(([author, quotes]) => (
-        <AuthorQuotes
-          key={author}
-          author={author}
-          quotes={quotes}
-        />
+        <AuthorQuotes key={author} author={author} quotes={quotes} />
       ))}
     </>
   );

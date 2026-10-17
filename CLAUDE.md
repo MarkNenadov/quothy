@@ -8,8 +8,9 @@ Quothy is a small Next.js site of quotes from books, live at https://quotes.mark
 - `bun run typecheck`: `tsc --noEmit`
 - `bun run lint`: ESLint
 - `bun run build`: production build
+- `bun run format`: Prettier (CI runs `format:check`)
 
-CI (`.github/workflows/ci.yml`) runs all four; run them before calling a change done.
+CI (`.github/workflows/ci.yml`) runs all of these; run them before calling a change done.
 
 ## Layout
 
