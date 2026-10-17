@@ -1,11 +1,11 @@
 import { connection } from "next/server";
-import { QuoteBrowser } from "../components/QuoteBrowser";
+import { RandomQuote } from "../components/RandomQuote";
 import { data } from "../data/quoteData";
 import { pickRandomQuote } from "../lib/pickRandomQuote";
 
 export default async function Home() {
-  // Render per request so each visit gets a fresh random quote in the initial HTML
+  // Render per request so each visit (and each "Another quote") gets a fresh random quote
   await connection();
 
-  return <QuoteBrowser quotes={data} initialQuote={pickRandomQuote(data)} />;
+  return <RandomQuote quote={pickRandomQuote(data)} />;
 }

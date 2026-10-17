@@ -2,7 +2,8 @@
 
 [![CI](https://github.com/MarkNenadov/quothy/actions/workflows/ci.yml/badge.svg)](https://github.com/MarkNenadov/quothy/actions/workflows/ci.yml)
 
-Quotes from my reading, browsable at random, by author, or by topic.
+Quotes from my reading, browsable at random, by author, or by topic. Every author and topic has its own
+shareable page, like [/topics/moths](https://quotes.marknenadov.com/topics/moths).
 
 **Live:** https://quotes.marknenadov.com/
 
@@ -13,7 +14,8 @@ Quotes from my reading, browsable at random, by author, or by topic.
 
 ## Stack
 
-- [Next.js](https://nextjs.org) 16 (App Router; the first quote is server-rendered per request)
+- [Next.js](https://nextjs.org) 16 App Router: the random quote renders per request, and every author and topic page
+  is pre-built, so the quote data never ships in client JavaScript
 - React 19 and TypeScript
 - Tailwind CSS 4 with light and dark colour tokens
 - Jest and Testing Library
@@ -57,6 +59,7 @@ Quotes live in [`src/data/quoteData.ts`](src/data/quoteData.ts). Append an entry
 The data has its own tests ([`quoteData.test.ts`](src/data/quoteData.test.ts)), so `bun run test` catches:
 
 - a book title credited to more than one author
+- two authors whose names map to the same page URL
 - tags that aren't kebab-case
 - duplicate quotes or quotes with no tags
 - leading or trailing whitespace

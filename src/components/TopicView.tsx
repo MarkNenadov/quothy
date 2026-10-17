@@ -1,23 +1,21 @@
 import { Quote } from "../models/quotes";
 import { QuoteContainer } from "./QuoteContainer";
 import { QuoteFigure } from "./QuoteFigure";
+import { SectionHeading } from "./SectionHeading";
 
 interface TopicViewProps {
   tag: string;
   quotes: Quote[];
+  headingHref?: string;
 }
 
-export const TopicView = (props: TopicViewProps) => {
-  const { tag, quotes } = props;
-
-  return (
-    <div key={tag} className="m-5">
-      <h2>{tag}</h2>
-      {quotes.map((quote, index) => (
-        <QuoteContainer key={index}>
-          <QuoteFigure quote={quote} />
-        </QuoteContainer>
-      ))}
-    </div>
-  );
-};
+export const TopicView = ({ tag, quotes, headingHref }: TopicViewProps) => (
+  <div className="m-5">
+    <SectionHeading text={tag} href={headingHref} />
+    {quotes.map((quote, index) => (
+      <QuoteContainer key={index}>
+        <QuoteFigure quote={quote} />
+      </QuoteContainer>
+    ))}
+  </div>
+);

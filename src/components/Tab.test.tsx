@@ -1,47 +1,27 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { Tab } from "./Tab";
 
 describe("Tab", () => {
-  const mockClickHook = jest.fn();
+  test("renders as a link named by its label", () => {
+    render(<Tab label="Test Tab" href="/test" isActive={false} />);
 
-  beforeEach(() => {
-    jest.clearAllMocks();
+    expect(screen.getByRole("link", { name: "Test Tab" })).toHaveAttribute("href", "/test");
   });
 
-  test("renders as a button named by its label", () => {
-    render(<Tab label="Test Tab" isActive={false} clickHook={mockClickHook} />);
+  test("marks the active tab as the current page", () => {
+    render(<Tab label="Tab" href="/" isActive={true} />);
 
-    expect(screen.getByRole("button", { name: "Test Tab" })).toBeInTheDocument();
+    const tab = screen.getByRole("link", { name: "Tab" });
+    expect(tab).toHaveAttribute("aria-current", "page");
+    expect(tab).toHaveClass("bg-surface-strong");
   });
 
-  test.each([
-    [true, "true", "bg-surface-strong"],
-    [false, "false", "bg-surface"],
-  ])("isActive=%p sets aria-pressed=%p and %p", (isActive, ariaPressed, backgroundClass) => {
-    render(<Tab label="Tab" isActive={isActive} clickHook={mockClickHook} />);
+  test("does not mark an inactive tab as the current page", () => {
+    render(<Tab label="Tab" href="/" isActive={false} />);
 
-    const tab = screen.getByRole("button", { name: "Tab" });
-    expect(tab).toHaveAttribute("aria-pressed", ariaPressed);
-    expect(tab).toHaveClass(backgroundClass);
-  });
-
-  test("calls clickHook when clicked", async () => {
-    render(<Tab label="Clickable Tab" isActive={false} clickHook={mockClickHook} />);
-
-    await userEvent.click(screen.getByRole("button", { name: "Clickable Tab" }));
-
-    expect(mockClickHook).toHaveBeenCalledTimes(1);
-  });
-
-  test.each(["{Enter}", " "])("calls clickHook when %p is pressed while focused", async (key) => {
-    render(<Tab label="Keyboard Tab" isActive={false} clickHook={mockClickHook} />);
-
-    await userEvent.tab();
-    expect(screen.getByRole("button", { name: "Keyboard Tab" })).toHaveFocus();
-    await userEvent.keyboard(key);
-
-    expect(mockClickHook).toHaveBeenCalledTimes(1);
+    const tab = screen.getByRole("link", { name: "Tab" });
+    expect(tab).not.toHaveAttribute("aria-current");
+    expect(tab).toHaveClass("bg-surface");
   });
 });

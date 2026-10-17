@@ -5,6 +5,10 @@ jest.mock("next/server", () => ({
   connection: jest.fn(),
 }));
 
+jest.mock("next/navigation", () => ({
+  useRouter: jest.fn(),
+}));
+
 jest.mock("../data/quoteData", () => ({
   data: [
     {

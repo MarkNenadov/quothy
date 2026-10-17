@@ -14,12 +14,14 @@ CI (`.github/workflows/ci.yml`) runs all of these; run them before calling a cha
 
 ## Layout
 
-- `src/app/page.tsx`: Server Component; picks the first random quote per request
-- `src/components/QuoteBrowser.tsx`: client component holding tab state
+- `src/app/page.tsx`: random quote, rendered per request (`router.refresh()` fetches another)
+- `src/app/authors/[slug]`, `src/app/topics/[tag]`: pre-built per author and per topic via `generateStaticParams`
+- `src/app/layout.tsx`: header, `NavTabs` (client, highlights the current tab) and footer
+- `src/lib/quoteQueries.ts`, `src/lib/slugify.ts`: lookups behind the routes
 - `src/components/QuoteFigure.tsx`: the one place a quote is rendered (figure/blockquote/cite)
 - `src/data/quoteData.ts`: all quotes, as a flat `Quote[]`
-- `src/data/quoteData.test.ts`: data invariants (one author per title, kebab-case tags, no duplicates,
-  no untagged quotes, no untrimmed text)
+- `src/data/quoteData.test.ts`: data invariants (one author per title, unique author slugs, kebab-case
+  tags, no duplicates, no untagged quotes, no untrimmed text)
 - `src/app/globals.css`: colour tokens (`surface`, `surface-strong`, `line`, `accent`) with dark values
 
 ## Conventions

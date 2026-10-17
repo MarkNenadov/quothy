@@ -1,4 +1,5 @@
 import { data } from "./quoteData";
+import { slugify } from "../lib/slugify";
 
 describe("quoteData", () => {
   test("each book title is credited to exactly one author", () => {
@@ -8,6 +9,13 @@ describe("quoteData", () => {
       .map(([title]) => title);
 
     expect(titlesWithMultipleAuthors).toEqual([]);
+  });
+
+  test("each author has a URL slug no other author shares", () => {
+    const authorsBySlug = Map.groupBy(new Set(data.map((quote) => quote.book.author)), slugify);
+    const collidingSlugs = [...authorsBySlug].filter(([, authors]) => authors.length > 1).map(([slug]) => slug);
+
+    expect(collidingSlugs).toEqual([]);
   });
 
   test("tags are kebab-case", () => {
