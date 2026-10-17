@@ -1,12 +1,10 @@
 export interface Book {
-    title: string,
-    author: string
-  }
-  
- export interface Quote {
-    quote: string,
-    book: Book
-    tags: string[]
-  }
+  title: string;
+  author: string;
+}
 
-  export default Quote
+export interface Quote {
+  quote: string;
+  book: Book;
+  tags: string[];
+}
