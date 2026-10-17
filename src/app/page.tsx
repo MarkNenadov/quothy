@@ -60,7 +60,7 @@ export default function Home() {
         currentTab === "topic" && <ByTopic quoteList={data} />
       }
       <div className="text-sm text-center pt-2">
-        {data.length} quotes present from {new Set(data.map( d => d.book.title)).size} authors. Quothy uses Next.js, Typescript, and TailwindCSS. You can see the source on 
+        {data.length} quotes present from {new Set(data.map( d => d.book.author)).size} authors. Quothy uses Next.js, Typescript, and TailwindCSS. You can see the source on 
         &nbsp;<a 
           className="underline text-blue-800" 
           href={"https://github.com/MarkNenadov/quothy"}
