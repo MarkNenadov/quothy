@@ -306,7 +306,7 @@ export const data: Quote[] = [
       tags: ["lichen", "wildlife"]
     },
     {
-      quote: "The Stones' rough-tough bad-boy personae was as much a contrivance as the Batles' famous sweetness; with the help of clever counselors, the Stones discovered to their own satisfaction just how vast was the market for badness.",
+      quote: "The Stones' rough-tough bad-boy personae was as much a contrivance as the Beatles' famous sweetness; with the help of clever counselors, the Stones discovered to their own satisfaction just how vast was the market for badness.",
       book: {
         author: "Todd Gitlin",
         title: "The Sixties: Years of Hope, Days of Rage"
