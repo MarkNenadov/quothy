@@ -17,8 +17,8 @@ describe('Tab', () => {
   });
 
   test.each([
-    [true, 'true', 'bg-sky-300'],
-    [false, 'false', 'bg-sky-200'],
+    [true, 'true', 'bg-surface-strong'],
+    [false, 'false', 'bg-surface'],
   ])('isActive=%p sets aria-pressed=%p and %p', (isActive, ariaPressed, backgroundClass) => {
     render(<Tab label="Tab" isActive={isActive} clickHook={mockClickHook} />);
 

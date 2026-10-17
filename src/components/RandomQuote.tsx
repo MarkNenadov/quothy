@@ -18,7 +18,7 @@ interface ActionButtonProps {
 const ActionButton = ({label, clickHook}: ActionButtonProps) => (
   <button
     type="button"
-    className="cursor-pointer px-3 py-1 text-sm md:text-base bg-sky-300 border border-black"
+    className="cursor-pointer px-3 py-1 text-sm md:text-base bg-surface-strong border border-line rounded-md"
     onClick={clickHook}
   >
     { label }

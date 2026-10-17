@@ -54,7 +54,7 @@ export const QuoteBrowser = ({ quotes, initialQuote }: QuoteBrowserProps) => {
       <div className="text-sm text-center pt-2">
         {quotes.length} quotes present from {new Set(quotes.map( d => d.book.author)).size} authors. Quothy uses Next.js, Typescript, and TailwindCSS. You can see the source on
         &nbsp;<a
-          className="underline text-blue-800"
+          className="underline text-accent"
           href={"https://github.com/MarkNenadov/quothy"}
           aria-label='"GitHub Source Link'
         >

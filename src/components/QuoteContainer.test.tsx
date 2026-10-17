@@ -33,7 +33,7 @@ describe('QuoteContainer', () => {
     );
     
     const container = screen.getByText('Default content').parentElement;
-    expect(container).toHaveClass('bg-sky-200');
+    expect(container).toHaveClass('bg-surface');
     expect(container).toHaveClass('p-4');
     expect(container).toHaveClass('w-full');
   });

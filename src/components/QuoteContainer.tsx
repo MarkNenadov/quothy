@@ -12,7 +12,7 @@ export const QuoteContainer = (
 
   return (
     <div 
-      className={`${textStyle}  bg-sky-200 p-4 w-full`}
+      className={`${textStyle ?? ""} bg-surface p-4 mb-4 w-full rounded-lg`}
       onClick={ onClick || undefined }
     >
         { children }
