@@ -12,6 +12,7 @@ jest.mock("next/navigation", () => ({
 jest.mock("../data/quoteData", () => ({
   data: [
     {
+      id: "q1",
       quote: "The only quote",
       book: { title: "Book 1", author: "Author A" },
       tags: ["test"],

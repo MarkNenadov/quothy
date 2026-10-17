@@ -20,8 +20,8 @@ CI (`.github/workflows/ci.yml`) runs all of these; run them before calling a cha
 - `src/lib/quoteQueries.ts`, `src/lib/slugify.ts`: lookups behind the routes
 - `src/components/QuoteFigure.tsx`: the one place a quote is rendered (figure/blockquote/cite)
 - `src/data/quoteData.ts`: all quotes, as a flat `Quote[]`
-- `src/data/quoteData.test.ts`: data invariants (one author per title, unique author slugs, kebab-case
-  tags, no duplicates, no untagged quotes, no untrimmed text)
+- `src/data/quoteData.test.ts`: data invariants (one author per title, unique author slugs, unique
+  six-character ids, kebab-case tags, no duplicates, no untagged quotes, no untrimmed text)
 - `src/app/globals.css`: colour tokens (`surface`, `surface-strong`, `line`, `accent`) with dark values
 
 ## Conventions
@@ -33,5 +33,5 @@ CI (`.github/workflows/ci.yml`) runs all of these; run them before calling a cha
 
 ## Adding quotes
 
-Use the `/add-quote` skill. Keep quote text verbatim, even when it looks like it has a typo; flag
+Use the `/add-quote` skill. Never change an existing quote's `id`; it is the quote's permanent link. Keep quote text verbatim, even when it looks like it has a typo; flag
 suspected typos instead of fixing them.

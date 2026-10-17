@@ -2,6 +2,7 @@ import { Quote } from "../models/quotes";
 
 export const data: Quote[] = [
   {
+    id: "lw7jfx",
     quote:
       "The difference between accomplished birders and beginning birders is that accomplished birders have misidentified thousands of birds and beginning birders relatively few.",
     book: {
@@ -11,6 +12,7 @@ export const data: Quote[] = [
     tags: ["birding"],
   },
   {
+    id: "1sxd5o",
     quote: "Attraction to fear is a kind of hunger.",
     book: {
       author: "Stephen S. Hall",
@@ -19,6 +21,7 @@ export const data: Quote[] = [
     tags: ["fear"],
   },
   {
+    id: "qe7b4x",
     quote:
       "though [Jerry Garcia] abhored violance and abjured pain, he enjoyed a certain amount of chaos. The bitter aftermath of Altamont [Free Concert] might have sunk some people, might have torn apart a less tested band. Instead, the Dead bolted out of Altamont and produced not one but two landmark albums in less than a year.",
     book: {
@@ -28,6 +31,7 @@ export const data: Quote[] = [
     tags: ["grateful-dead", "jerry-garcia"],
   },
   {
+    id: "r3zg14",
     quote: "The Christian family doesn't just think theologically on Sundays; it does theology from Sunday to Sunday.",
     book: {
       author: "Paul David Tripp",
@@ -36,6 +40,7 @@ export const data: Quote[] = [
     tags: ["parenting", "theology"],
   },
   {
+    id: "wehi1j",
     quote:
       "One of the most ironic paradoxes of our time is this great availability of leisure that somehow fails to be translated into enjoyment. Compared to people living only a few generations ago, we have enormously greater opportunities to have a good time, yet there is no indication that we actually enjoy life more than our ancestors did. Opportunities alone, however, are not enough. We also need the skills to make use of them. And we need to know how to control consciousness—a skill that most people have not learned to cultivate. Surrounded by an astounding panoply of recreational gadgets and leisure choices, most of us go on being bored and vaguely frustrated.",
     book: {
@@ -45,6 +50,7 @@ export const data: Quote[] = [
     tags: ["leisure", "mind"],
   },
   {
+    id: "qlcp5y",
     quote: "understanding and cultivating culture is a key part of your job as a leader.",
     book: {
       author: "Camile Fournier",
@@ -53,6 +59,7 @@ export const data: Quote[] = [
     tags: ["management", "leadership"],
   },
   {
+    id: "5kvnzd",
     quote:
       "look for self-regulating processes. If you find yourself playing the role of taskmaster — criticizing people who break the rules or don’t follow the process — see if the process itself can be changed to be easier to follow.",
     book: {
@@ -62,6 +69,7 @@ export const data: Quote[] = [
     tags: ["management", "leadership"],
   },
   {
+    id: "zphs9p",
     quote:
       "If you join or create a company with very different values than your own, you’ll feel a great deal of friction that will make your life harder. At the highest levels, all of this cultural alignment comes to play in everything you do, because you spend so much of your time in the land of negotiation, collaboration, and cross-functional teamwork. This doesn’t mean that you can’t be successful in a company that holds some different values from your own. In fact, it’s pretty rare that you agree perfectly with every value of every person on the senior team of a company. You probably don’t even agree with every value of every person in your family, or among your friends! Still, the amount of overlap between the traits you value most and the traits your company values most largely determines how easy the fit will be for you.",
     book: {
@@ -71,6 +79,7 @@ export const data: Quote[] = [
     tags: ["management", "leadership"],
   },
   {
+    id: "e8g9l9",
     quote:
       "The most important lesson I’ve learned is that you have to be able to manage yourself if you want to be good at managing others.",
     book: {
@@ -80,6 +89,7 @@ export const data: Quote[] = [
     tags: ["management", "leadership"],
   },
   {
+    id: "x1i1gg",
     quote:
       "The notion of cities as outside nature is an old fantasy of ours, but in North America coyotes have entirely undermined it",
     book: {
@@ -89,6 +99,7 @@ export const data: Quote[] = [
     tags: ["nature"],
   },
   {
+    id: "osv8rw",
     quote: "Pitchers need to be students, forever students,",
     book: {
       author: "David Cone",
@@ -97,6 +108,7 @@ export const data: Quote[] = [
     tags: ["learning", "baseball"],
   },
   {
+    id: "jb5ob3",
     quote:
       "If one’s argument for civilization holds that wild predators should never roam in broad daylight through the boroughs of America’s largest, loudest, most radically urban metropolis, then, truly, the end of civilization had arrived on paw prints in the snow.",
     book: {
@@ -106,6 +118,7 @@ export const data: Quote[] = [
     tags: ["nature"],
   },
   {
+    id: "hbrpmj",
     quote: "O powerful love! that in some respects, makes a beast a man; in some other a man a beast.",
     book: {
       author: "William Shakespeare",
@@ -114,6 +127,7 @@ export const data: Quote[] = [
     tags: ["love", "shakespeare"],
   },
   {
+    id: "n24iy2",
     quote: "the world's mine oyster, Which I with sword will open.",
     book: {
       author: "William Shakespeare",
@@ -122,6 +136,7 @@ export const data: Quote[] = [
     tags: ["shakespeare"],
   },
   {
+    id: "w1pvl3",
     quote:
       "we Westerners so emphasize a merely legal understanding of the death of Christ for our salvation that we overlook material in the New Testament that doesn’t fit that model.",
     book: {
@@ -131,6 +146,7 @@ export const data: Quote[] = [
     tags: ["theology"],
   },
   {
+    id: "jtkwuy",
     quote:
       "The Christian...lives with his heavenly destiny ever in full view. His outlook is not bounded by the present life and the present world. He sees that which is and that which is to come in their true proportions and in their proper perspective. The centre of gravity of his consciousness lies not in the present but in the future. Hope, not possession, is that which gives tone and colour to his life.",
     book: {
@@ -140,6 +156,7 @@ export const data: Quote[] = [
     tags: ["heaven", "christian-living", "theology"],
   },
   {
+    id: "c7vjlu",
     quote: "Learning to follow Christ is learning to be a gardener of your own heart.",
     book: {
       author: "Pierce Taylor Hibbes",
@@ -148,6 +165,7 @@ export const data: Quote[] = [
     tags: ["christian-living", "discipleship"],
   },
   {
+    id: "o74o9r",
     quote: "On no point is the mind of God more fully declared than against pride",
     book: {
       author: "Charles Bridges",
@@ -156,6 +174,7 @@ export const data: Quote[] = [
     tags: ["christian-living"],
   },
   {
+    id: "o2uujm",
     quote:
       "Copernicus was labeled a heretic for saying the earth wasn’t the center of the universe, but the new heresy is apparently any suspicion that the universe doesn’t revolve around you",
     book: {
@@ -165,6 +184,7 @@ export const data: Quote[] = [
     tags: ["self"],
   },
   {
+    id: "6zww36",
     quote:
       "Let’s be clear: God doesn’t need you. Jesus doesn’t need you. The Holy Spirit doesn’t need you. Men have been pastoring the church for thousands of years, and the kingdom will be in fine shape after you’re dead. God always has his workers; even a donkey will do in a pinch.",
     book: {
@@ -174,6 +194,7 @@ export const data: Quote[] = [
     tags: ["church-leadership", "holy-spirit"],
   },
   {
+    id: "irhqiz",
     quote:
       "Christianity is discipleship, at its very core (Matthew 28:19, Titus 2). You should always be discipling others, and you should always be being discipled. Don’t settle for a casual relationship that soothes your conscience; engage Christ’s discipleship call like you really believe the Son of God is the one who told you to do it. This is a concept with a rich biblical pedigree. In 2 Timothy 2:2 there are actually five distinct parties involved in mentorship. There is the core mentor/mentee rela-tionship of Paul and Timothy. This is happening in the context of 'many witnesses,' a reference to the local church. Furthermore, Paul charges Timothy to take up the dis-cipleship baton and entrust it to 'faithful men.' But even then the discipleship chain reaction isn’t finished: those faithful men are to be poured into so that they 'will be able to teach others also.' Paul’s vision for pastoral training is multigenerational mentorship in the context of the local church.",
     book: {
@@ -183,6 +204,7 @@ export const data: Quote[] = [
     tags: ["christian-living", "discipleship"],
   },
   {
+    id: "ohibtw",
     quote: "distance is the great deceiver and imagination the great receiver",
     book: {
       author: "Various",
@@ -191,6 +213,7 @@ export const data: Quote[] = [
     tags: ["birding", "mind", "psychology"],
   },
   {
+    id: "d6vgms",
     quote:
       "So, to become a supercommunicator, all we need to do is listen closely to what is said and unsaid, ask the right questions, recognize and match others' moods, and make our own feelings easy for others to perceive.",
     book: {
@@ -200,6 +223,7 @@ export const data: Quote[] = [
     tags: ["communication"],
   },
   {
+    id: "xhvicz",
     quote:
       "Deep questions are particularly good at creating intimacy because they ask people to describe their beliefs, values, feelings, and experiences in ways that can reveal something vulnerable.",
     book: {
@@ -209,6 +233,7 @@ export const data: Quote[] = [
     tags: ["communication"],
   },
   {
+    id: "te0uys",
     quote: "Beware the simple question: 'Is this possible?' In software, everything is possible but nothing is free.",
     book: {
       author: "Ryan Singer",
@@ -217,6 +242,7 @@ export const data: Quote[] = [
     tags: ["software"],
   },
   {
+    id: "a11fdk",
     quote:
       "Be a shock absorber for the team, allowing them to focus on their day-to-day work and building trust for streamlined workflow.",
     book: {
@@ -226,6 +252,7 @@ export const data: Quote[] = [
     tags: ["leadership", "management"],
   },
   {
+    id: "2yzqh7",
     quote:
       "We should not make the mistake of thinking the difference between the Creator and the creature is simply a difference in size. To do so is to assume God can be measured, as if he were merely a bigger version of ourselves. I call this the superhero syndrome. Christians like to think of God as their superhero, like us but with superpowers. But that is a terribly unbiblical portrayal of God’s infinite nature. He is not a God who simply possesses our powers but in endless measure. No, an infinite God transcends our characteristics altogether.",
     book: {
@@ -235,6 +262,7 @@ export const data: Quote[] = [
     tags: ["theology", "god"],
   },
   {
+    id: "t7bh0f",
     quote:
       "today the consensus of sixteenth-century scholars is that the growth and organization of the Reformed faction in France into congregations was caused by pastors and books sent illegally into France from Geneva in the 1550s and early 1560s.",
     book: {
@@ -244,6 +272,7 @@ export const data: Quote[] = [
     tags: ["christian-history", "books", "french-reformation"],
   },
   {
+    id: "2y5k7l",
     quote:
       "It is unfortunate that the French delegation was prevented from attending the Synod of Dort. One is left to wonder: If Du Moulin had been allowed to participate in person, would he have been a significant moderating influence on the synod and the canons?",
     book: {
@@ -253,6 +282,7 @@ export const data: Quote[] = [
     tags: ["christian-history", "theology", "french-reformation"],
   },
   {
+    id: "66j36b",
     quote:
       "Losing the gold on my first Olympics changed my life. I learned so tangibly (and devastatingly) early on that failure is not fatal. It stings. It sucks. But I came to see that failure is the setup for a comeback. The loses just inspire you to do better. To work harder. To learn from your mistakes.",
     book: {
@@ -262,6 +292,7 @@ export const data: Quote[] = [
     tags: ["hockey", "failure"],
   },
   {
+    id: "djgb03",
     quote:
       "I feel strongly that we did not build our institutions, our traditions, our history, our national pride, in short this great country Canada, to become the fifty-first state of America.",
     book: {
@@ -271,6 +302,7 @@ export const data: Quote[] = [
     tags: ["canadian-politics"],
   },
   {
+    id: "8x6qjv",
     quote:
       "To believe ourselves in a state of salvation, (however desirable, when grounded on evidence), is far inferior, in its object, to saving faith. The grand object on which faith fixes, is the glory of Christ, and not the happy coidtion we are in",
     book: {
@@ -280,6 +312,7 @@ export const data: Quote[] = [
     tags: ["salvation", "theology"],
   },
   {
+    id: "x0k19n",
     quote:
       "When I was younger, I took a lot of pride in coming up with interview questions. I now believe the best interview technique is no technique at all: you simply have enough of a converssation that you can get to know the person a little bit.",
     book: {
@@ -289,6 +322,7 @@ export const data: Quote[] = [
     tags: ["interviews"],
   },
   {
+    id: "edwq4o",
     quote:
       "Language is how you give intention to your intuition and how you share your vision with others. Language is how you create a culture.",
     book: {
@@ -298,6 +332,7 @@ export const data: Quote[] = [
     tags: ["culture", "leadership"],
   },
   {
+    id: "pnhj62",
     quote:
       "The difference between animals and fungi is simple: animals put food in their bodies, whereas fungi put their bodies in the food.",
     book: {
@@ -307,6 +342,7 @@ export const data: Quote[] = [
     tags: ["fungi"],
   },
   {
+    id: "r8ui5y",
     quote:
       "Perhaps the most significant symbol of 1943 Detroit was its police department, generally credited at the time with being one of the most bigoted in the North. The ranks of police officers were swelled by an exceptionally high number of white southerners, while the less than two percent of the force who were Negros were generally assigned only to two precincts..",
     book: {
@@ -316,6 +352,7 @@ export const data: Quote[] = [
     tags: ["detroit", "civil-rights"],
   },
   {
+    id: "1gjl6w",
     quote: "Psalms were at the heart of monastic liturgy and would remain so for Protestants, not least in France.",
     book: {
       author: "Geoffrey Treasure",
@@ -324,6 +361,7 @@ export const data: Quote[] = [
     tags: ["huguenots", "psalms", "french-reformation"],
   },
   {
+    id: "pa3jgs",
     quote:
       "Lichens are small biospheres that include both photosynthetic and non-photosynthetic organisms, thus combining the Earth's main metabolic processes. Lichens are in some sense, micro-plents--worlds writ small.",
     book: {
@@ -333,6 +371,7 @@ export const data: Quote[] = [
     tags: ["lichen", "wildlife"],
   },
   {
+    id: "x9y8ql",
     quote:
       "The Stones' rough-tough bad-boy personae was as much a contrivance as the Beatles' famous sweetness; with the help of clever counselors, the Stones discovered to their own satisfaction just how vast was the market for badness.",
     book: {
@@ -342,6 +381,7 @@ export const data: Quote[] = [
     tags: ["music", "1960s"],
   },
   {
+    id: "ad6227",
     quote: "Sin is not simply breaking God's law, it is breaking God's heart.",
     book: {
       author: "Tim Chester",
@@ -350,6 +390,7 @@ export const data: Quote[] = [
     tags: ["hosea", "old-testament", "bible", "sin"],
   },
   {
+    id: "91jl0j",
     quote: "God always seeks the best for His people and that best is Himself.",
     book: {
       author: "Tim Chester",
@@ -358,6 +399,7 @@ export const data: Quote[] = [
     tags: ["hosea", "old-testament", "bible", "god"],
   },
   {
+    id: "2m6com",
     quote: "If you look at a large quantity of data long enough, a huge amount of patterns will emerge.",
     book: {
       author: "Benjamin Graham",
@@ -366,6 +408,7 @@ export const data: Quote[] = [
     tags: ["investing", "finance"],
   },
   {
+    id: "rcmhdi",
     quote:
       "[Jesus] chose twelve apostles to testify...[b]ut what coudl the testimony of twelve poor, though hoenst men, prevail against the confronting suffrage of the world? Wherefore the work of bearing witness to Christ, was committed to him who is above all, and who is able to make his testimony prevalent...Accordingly the apostles plead his concurring testimony--'We are his witnesses--and so also is the Holy Spriit'",
     book: {
@@ -375,6 +418,7 @@ export const data: Quote[] = [
     tags: ["holy-spirit", "theology"],
   },
   {
+    id: "a3pb1h",
     quote:
       "The relationships between plants and mycorrhizal fungi are key to understanding how ecosystems work...I became dizzy when I thought about what was going on underground. Plants and mycorrhizal fungi are promiscuous: many fungi can live within the roots of a single plant and many plants can connect with a single fungal network. In this way a variety of substances, from nutrients to signaling compounds, can pass between plants via fungal connnections. In simple terms, plants are socially networked by fungi. This is what is mean by the 'wood wide web.'",
     book: {
@@ -384,6 +428,7 @@ export const data: Quote[] = [
     tags: ["fungi", "wildlife"],
   },
   {
+    id: "illcov",
     quote:
       "poems are like pieces of music: by definition they all have something in common, but they vary widely in how they work, where they come from, and what they try to do. Varied readers like various poems for various reasons",
     book: {
@@ -393,6 +438,7 @@ export const data: Quote[] = [
     tags: ["poetry"],
   },
   {
+    id: "0h9lbb",
     quote:
       "Most of the time..training makes you better at what you do. Athletes practice all day every day so their muscle memory will take over..[enabling] you to perform your tasks without needing to think about why you're doing what you're doing--which is fantastic if your job is to have an astronomical free-throw percentage. But muscle memory isn't always a good thing: training like that can be like putting on a pair of blinders. Those meticulously schooled fine-dining folks were doing what they'd always done; they weren't thinking critically about the rules they were enforcing. They weren't in any position to determine whether those rules were good ones or not. When you ask 'Why do we do it this way?' and the only answer is 'Because that's how it's always been done', the rule deserves another look. Knowing less is often an opportunity to do more.",
     book: {
@@ -402,6 +448,7 @@ export const data: Quote[] = [
     tags: ["knowledge"],
   },
   {
+    id: "edou7u",
     quote:
       "A leader's responsibility is to identify the strengths of the people on their team, no matter how buried those strengths may be.",
     book: {
@@ -411,6 +458,7 @@ export const data: Quote[] = [
     tags: ["leadership"],
   },
   {
+    id: "6rfxv1",
     quote:
       "if you take care of your managers and give them what they need to be successful, you put them in a better position to take care of their teams.",
     book: {
@@ -420,6 +468,7 @@ export const data: Quote[] = [
     tags: ["management", "leadership"],
   },
   {
+    id: "f9004b",
     quote:
       "no one who ever changed the game did so by being reasonable...across every discipline...you need to be unreasonable to see a world that doesn't yet exist.",
     book: {
@@ -429,6 +478,7 @@ export const data: Quote[] = [
     tags: ["innovation"],
   },
   {
+    id: "d9modl",
     quote:
       "Some things benefit from shocks; they thrive and grow when exposed to randomness, disorder and stressors, and love adventure, risk, and uncertainty. Yet, in spite of the ubiquity of the phenomenon, there is no word for the exact opposite of fragile. Let us call it antifragile.",
     book: {
@@ -438,6 +488,7 @@ export const data: Quote[] = [
     tags: ["disorder"],
   },
   {
+    id: "yy5xb4",
     quote: "Grit requires rest.",
     book: {
       author: "Hayley Wickenheiser",
@@ -446,6 +497,7 @@ export const data: Quote[] = [
     tags: ["hockey", "grit", "rest"],
   },
   {
+    id: "t0zj5c",
     quote:
       "We are steeped in a culture of speed, so much so that it can feel at times like we are living in fast-forward. This conditions us to think that slow means lazy. Or that slow means indecisive. Or that slow means stupid. That if we don't rush, we'll be left in the dust. Reject that thinking. Hockey's greatest players have the ability to slow the game down., twisting their defenders into a pretzel, lulling them, before taking off with lightening speed. Whether you're an entrepreneur, a scientist, or an athlete, building a successful company, career, or team is about more than velocity. It's about seeding success long before you reap the rewards of your labour. It's about balancing urgency with caution. It's about moving slowly enough to make the needed fixes as they come up.",
     book: {
@@ -455,6 +507,7 @@ export const data: Quote[] = [
     tags: ["hockey", "speed"],
   },
   {
+    id: "5p3iv3",
     quote:
       "Being in leadership is one of the toughest jobs out there. As a leader, I never let anyone off easy. I held us all accountable, myself included. I was never afraid of being unpopular. Being a captain was often lonely as hell, and I felt constant pressure to be strong, to not make mistakes. I wish I had realized earlier that vulnerability doesn't undercut your authority as a leader, but enhances it.  Making mistakes is unavoidable. But being honest and open about those mistakes makes you a better leader. Acting with empathy first, always, makes you a better leader and a better person.",
     book: {
@@ -464,6 +517,7 @@ export const data: Quote[] = [
     tags: ["leadership", "empathy", "hockey"],
   },
   {
+    id: "ccu95e",
     quote: "Life is not all joy above sorrow; life is a battle for joy in the midst in the midst of sorrow.",
     book: {
       author: "John Piper",
@@ -472,6 +526,7 @@ export const data: Quote[] = [
     tags: ["joy", "christian-living"],
   },
   {
+    id: "c9tddv",
     quote:
       "For strange effects and extraordinary combinations we must go to life itself, which is always far more daring than any effort of the imagination.",
     book: {
@@ -481,6 +536,7 @@ export const data: Quote[] = [
     tags: ["joy", "christian-living"],
   },
   {
+    id: "s3x7ms",
     quote: "We need design--not just as a service to make our product beautiful--but to discover the right product.",
     book: {
       author: "Marty Cagan",
@@ -489,6 +545,7 @@ export const data: Quote[] = [
     tags: ["design", "product-management"],
   },
   {
+    id: "q0j86o",
     quote:
       "Being a seeker is a mindset, one that forces you to grow. I never settled for safe. I never did what has been done before...If I was getting bored or complacent, I changed things up. I never trained with my equals...I worked out with people who were bigger, stronger, or faster, or had something new to teach me. It's the best way to improve.",
     book: {
@@ -498,6 +555,7 @@ export const data: Quote[] = [
     tags: ["hockey", "learning"],
   },
   {
+    id: "cvcj6j",
     quote:
       "Recent estimates put the number of Calvinists in France in 1560 at around two million, forming some 10 percent of the total French population.",
     book: {
@@ -507,6 +565,7 @@ export const data: Quote[] = [
     tags: ["christian-history", "french-reformation"],
   },
   {
+    id: "txbpey",
     quote: "you could almost say the New Testament is one long commentary on the Psalms",
     book: {
       author: "Ian Stackhouse",
@@ -515,6 +574,7 @@ export const data: Quote[] = [
     tags: ["psalms"],
   },
   {
+    id: "v4b4xo",
     quote:
       "Therefore let us learn to hear from God in the way that it pleases him to speak to us, that is to say, when his word is preached, let us receive it peacably.",
     book: {
@@ -524,6 +584,7 @@ export const data: Quote[] = [
     tags: ["preaching", "bible"],
   },
   {
+    id: "fv861c",
     quote:
       "And thus let us learn that if want good assurance, if we want our souls to be at peace and rest, we must search both the beginning and the end of our salvation in our Lord Jesus Christ.",
     book: {
@@ -533,6 +594,7 @@ export const data: Quote[] = [
     tags: ["jesus", "salvation", "peace", "assurance"],
   },
   {
+    id: "ds7ibq",
     quote:
       "For if we do not have Christ Jesus before our eyes, it is unprofitable for us to learn anything else about God.",
     book: {
@@ -542,6 +604,7 @@ export const data: Quote[] = [
     tags: ["jesus", "god"],
   },
   {
+    id: "qau7s3",
     quote: "For what is the Gospel, but a perfection of all wisdom",
     book: {
       author: "John Calvin",
@@ -550,6 +613,7 @@ export const data: Quote[] = [
     tags: ["gospel", "wisdom"],
   },
   {
+    id: "z8vvpv",
     quote: "The chief exercise that the children of God have is to pray",
     book: {
       author: "John Calvin",
@@ -558,6 +622,7 @@ export const data: Quote[] = [
     tags: ["prayer"],
   },
   {
+    id: "nqlqwa",
     quote:
       "A church body needs its members to deliberately and consciously stay connected, to circulated life, to support one another.",
     book: {
@@ -567,6 +632,7 @@ export const data: Quote[] = [
     tags: ["church", "community"],
   },
   {
+    id: "eagz0j",
     quote:
       "Calvin and Chandieu both saw the Reformed consistory as the continuation of the Jewish religious council at the time of Christ, namely, the Sanhedrin. Both exegeted Jesus’ saying in Matthew 18:16, “Tell it to the church,” according to what would have worked in the Jewish context of Jesus’ day: “Tell it to the church” had to mean, “Tell it to the governing body of the church, that is, the Sanhedrin/Consistory.",
     book: {
@@ -576,6 +642,7 @@ export const data: Quote[] = [
     tags: ["christian-history", "elders", "ecclesiology"],
   },
   {
+    id: "ntoqvl",
     quote:
       "In their system the autonomy of the local churches came first, but the need for all the churches to express their unity and to assist each other in doctrine, worship, ethics, and judicial appeals warranted self-imposed restrictions that prevented every church from “doing what was right in its own eyes.",
     book: {
@@ -585,6 +652,7 @@ export const data: Quote[] = [
     tags: ["christian-history", "french-reformation", "ecclesiology"],
   },
   {
+    id: "pdvw6n",
     quote:
       "The arachnologist W. S. Bristowe calculated in the 1930s that, at certain seasons, a meadow in south-east England may contain more than two million spiders to the acre.",
     book: {
@@ -594,6 +662,7 @@ export const data: Quote[] = [
     tags: ["spdiers", "nature"],
   },
   {
+    id: "0nu5np",
     quote:
       "If we shift our gaze to the more doctrinally selective churches, particularly of the Reformed variety, we will hear strong affirmations of 'the ministry of the Word' and 'building the church on the word'. And typically these phrases refer to the teaching ministry of the Sunday morning pulpit. The problem here, however, is the God's Word is not always massaged throughout the life of the congregation, like yeast through dought. People show up on Sunday for the sermon, and often do little more. The ministry of the Word stops at noon...the 'ministry of the Word' indeed begins in the pulpit, but then it must continue through the life of the church as members echo God's Word back and forth to one another. The word reverberates as in an echo chamber",
     book: {
@@ -603,6 +672,7 @@ export const data: Quote[] = [
     tags: ["ecclesiology"],
   },
   {
+    id: "r43zyi",
     quote: "Good judgment, as the aphorism goes, comes from experience—and experience comes from bad judgment.",
     book: {
       author: "Megan McArdle",
@@ -611,6 +681,7 @@ export const data: Quote[] = [
     tags: ["experience", "failure"],
   },
   {
+    id: "oee4y6",
     quote:
       "If we want an educated population, a skilled workforce, an innovative society, then we will have to work just as hard as he did to persuade people that the pain of failure is like a blister in tennis—a sign that you are trying hard enough to improve.",
     book: {
@@ -620,6 +691,7 @@ export const data: Quote[] = [
     tags: ["experience", "failure"],
   },
   {
+    id: "60b3kz",
     quote: "that word 'grace' In an ungracious mouth is but profane.",
     book: {
       author: "William Shakespeare",
@@ -628,6 +700,7 @@ export const data: Quote[] = [
     tags: ["shakespeare", "grace"],
   },
   {
+    id: "2g71ar",
     quote: "They love not poison that do poison needs",
     book: {
       author: "William Shakespeare",
@@ -636,6 +709,7 @@ export const data: Quote[] = [
     tags: ["shakespeare"],
   },
   {
+    id: "9v243b",
     quote: "out of this nettle, danger, we pluck this flower, safety",
     book: {
       author: "William Shakespeare",
@@ -644,6 +718,7 @@ export const data: Quote[] = [
     tags: ["shakespeare"],
   },
   {
+    id: "7los55",
     quote: "A Christian’s witness lives and dies with a Christian’s ethics.",
     book: {
       author: "Matthew Kaemingk",
@@ -652,6 +727,7 @@ export const data: Quote[] = [
     tags: ["witness", "ethics"],
   },
   {
+    id: "mat4rb",
     quote: "It’s not selfish to replenish energy and renew vitality in order to serve God and others better.",
     book: {
       author: "David Murray",
@@ -660,6 +736,7 @@ export const data: Quote[] = [
     tags: ["rest"],
   },
   {
+    id: "6fitxb",
     quote: "God is not poor in mercy. He is rich in mercy.",
     book: {
       author: "Dane Ortlund",
@@ -668,6 +745,7 @@ export const data: Quote[] = [
     tags: ["theology", "grace"],
   },
   {
+    id: "hcud9x",
     quote:
       "If Martian anthropologists landed in our office or at our breakfast table, they might read our hunched posture over our phones as a kind of religious devotion to some electronic talisman.",
     book: {
@@ -677,6 +755,7 @@ export const data: Quote[] = [
     tags: ["habits", "technology"],
   },
   {
+    id: "evlvdl",
     quote:
       "You cannot protect or change your philosophy of ministry unless you understand the budget’s role in shaping it.",
     book: {
@@ -686,6 +765,7 @@ export const data: Quote[] = [
     tags: ["ministry", "finances", "ecclesiology"],
   },
   {
+    id: "lkg5t7",
     quote:
       "Disunity in a church is a big deal since the mission of a church is to show off the glory of God, and disunity misrepresents God.",
     book: {
@@ -695,6 +775,7 @@ export const data: Quote[] = [
     tags: ["ministry", "unity", "ecclesiology"],
   },
   {
+    id: "39cndi",
     quote: "An honorable grave is more esteemed Than the polluted closet of a king:",
     book: {
       author: "William Shakespeare",
@@ -703,6 +784,7 @@ export const data: Quote[] = [
     tags: ["shakespeare", "death"],
   },
   {
+    id: "409boq",
     quote:
       "Wisdom is foolishness but in her tongue, Beauty a slander but in her fair face, There is no summer but in her cheerful looks, Nor frosty winter but in her disdain.",
     book: {
@@ -712,6 +794,7 @@ export const data: Quote[] = [
     tags: ["shakespeare", "death"],
   },
   {
+    id: "66hzcv",
     quote: "For I do hold a tree in France too good To be the gallows of an English thief.",
     book: {
       author: "William Shakespeare",
@@ -720,6 +803,7 @@ export const data: Quote[] = [
     tags: ["shakespeare", "death"],
   },
   {
+    id: "02nk0r",
     quote:
       "We often rush to offer solutions to problems. I’m guilty of this all the time. I want to fix things as fast as possible. But in the throes of anxiety, we don’t want to be fixed right away; we want to be heard. We want to be seen.",
     book: {
@@ -729,6 +813,7 @@ export const data: Quote[] = [
     tags: ["anxiety"],
   },
   {
+    id: "dezl3i",
     quote: "What Ernest Hemmingway said of war we can say of anxiety: It burns the fat off our souls.",
     book: {
       author: "Pierce Taylor Hibbes",
@@ -737,6 +822,7 @@ export const data: Quote[] = [
     tags: ["anxiety"],
   },
   {
+    id: "w735xq",
     quote:
       "One of the more enduring misconceptions concerning the Puritans in America is that they adjured alcohol. In fact, they liked a good drink, or even a not so good one.",
     book: {
@@ -746,6 +832,7 @@ export const data: Quote[] = [
     tags: ["puritans", "alcohol"],
   },
   {
+    id: "yyltcy",
     quote: "France was both the cradle of European liberty and the cradle of censorship",
     book: {
       author: "Fernando Baez",
@@ -754,6 +841,7 @@ export const data: Quote[] = [
     tags: ["europe"],
   },
   {
+    id: "lkh6zy",
     quote:
       "Of the strawberry, Roger Williams (founder of Rhode Island and founder of the first Baptist congregation in America) said: This Berry is the wonder of all Fruits growing naturally in those parts: It is of it selfe Excellent; so that one of the chiefest Doctors of England was wont to say, that God could have made, but God never did make a better Berry",
     book: {
@@ -763,6 +851,7 @@ export const data: Quote[] = [
     tags: ["food"],
   },
   {
+    id: "y81ave",
     quote:
       "They key word is 'better.' It is a key to the whole Book of Hebrews, which speaks of better things, in Christ--a better plan, a better priest, a better covenant, a better sacrifice, better blood, a better home forever.",
     book: {
@@ -772,6 +861,7 @@ export const data: Quote[] = [
     tags: ["hebrews", "new-testament"],
   },
   {
+    id: "699k02",
     quote:
       "The mere presence of institutional elements (rules, resources, hierarchies) within a church does not necessarily imply institutionalism, any more than law implies legalism, or dogma implies dogmatism",
     book: {
@@ -781,6 +871,7 @@ export const data: Quote[] = [
     tags: ["church"],
   },
   {
+    id: "fri297",
     quote: "Paul is not a hero of our faith because of his strength; he’s a hero because of his weakness",
     book: {
       author: "Pierce Taylor Hibbes",
@@ -789,6 +880,7 @@ export const data: Quote[] = [
     tags: ["apostle-paul", "anxiety"],
   },
   {
+    id: "bht1ux",
     quote:
       "A truly gospel-humble person is not a self-hating person or a self-loving person, but a gospel-humble person.",
     book: {
@@ -798,6 +890,7 @@ export const data: Quote[] = [
     tags: ["humility"],
   },
   {
+    id: "231ob8",
     quote:
       "it is best to see the genre of Acts as somewhat fluid and approach the book through the lens of multiple genres",
     book: {
@@ -807,6 +900,7 @@ export const data: Quote[] = [
     tags: ["acts", "new-testament"],
   },
   {
+    id: "wczhhb",
     quote:
       "The transfiguration is both forward looking and backward looking, both anticipation and retrospection, both expecation and recognition.",
     book: {
@@ -816,6 +910,7 @@ export const data: Quote[] = [
     tags: ["jesus", "new-testament"],
   },
   {
+    id: "plj5d0",
     quote:
       "The transfiguration is a well deep beyond imagining. When we think we have hit rock bottom, a new spring appears. When we think we have exhausted the meaning of the passage, a new depth opens. When we think we have understood the implications, a new mystery arises.",
     book: {
@@ -825,6 +920,7 @@ export const data: Quote[] = [
     tags: ["jesus", "new-testament"],
   },
   {
+    id: "lokwtx",
     quote:
       "The cross and the transfiguration are not two competing visions but two complementary pictures of the Messiah.",
     book: {
@@ -834,6 +930,7 @@ export const data: Quote[] = [
     tags: ["jesus", "new-testament"],
   },
   {
+    id: "rxniuz",
     quote:
       "In some ways, the cross is the reverse of the transfiguration. One shows us Jesus's ultimate disgrace, and the other his ultimate honor. While the face of Christ bore shame at his passion as he was spit on, beaten, and pierced with thorns, his face brightened with honor at the transfiguration.",
     book: {
@@ -843,6 +940,7 @@ export const data: Quote[] = [
     tags: ["jesus", "new-testament"],
   },
   {
+    id: "hu0c7w",
     quote:
       "We are tempted to think that Jesus's divinity overcomes his humanity, that this veil of flesh is vanquished for a moment. The transfiguration corrects us. God perfects flesh; he doesn't destroy it...The Son takes on flesh without any alternation of his divinity, bnut in so doing he perfects and sanctifies it. The transfiguration does not move us past Jesus's humanity: it reveals to us how the flesh will be glorified.",
     book: {
@@ -852,6 +950,7 @@ export const data: Quote[] = [
     tags: ["jesus", "new-testament"],
   },
   {
+    id: "5ge9jr",
     quote:
       "For Kuyper, ideological hegemony was not merely irrational—it was blasphemous. For, Kuyper declared, whenever religious freedom is crushed, 'God’s name' is 'robbed of its splendor.'",
     book: {
@@ -861,6 +960,7 @@ export const data: Quote[] = [
     tags: ["religious-freedom", "liberty"],
   },
   {
+    id: "l64w0n",
     quote: "Christ descended in order to bring God to humanity, and he ascended to bring humanity to God.",
     book: {
       author: "Patrick Schreiner",
@@ -869,6 +969,7 @@ export const data: Quote[] = [
     tags: ["ascension", "theology"],
   },
   {
+    id: "l14vti",
     quote:
       "Luke writes to encourage, to embolden emulation, and to evangelize. Together these things show the pastoral heart of Luke who was a travel companion of Paul and partook in the planting of churches.",
     book: {
@@ -878,6 +979,7 @@ export const data: Quote[] = [
     tags: ["acts", "new-testament"],
   },
   {
+    id: "plsvhm",
     quote: "'Persecution is an almost omnipresent plot device' in Acts",
     book: {
       author: "Patrick Schreiner",
@@ -886,6 +988,7 @@ export const data: Quote[] = [
     tags: ["acts", "persecution", "new-testament"],
   },
   {
+    id: "kmqgf2",
     quote:
       "Readers would do well not only to read Acts but to read Acts with their ears attuned to how Luke tells his story. The form of a story is the content; it is not merely an ornament.",
     book: {
@@ -895,6 +998,7 @@ export const data: Quote[] = [
     tags: ["acts", "new-testament"],
   },
   {
+    id: "o7kg1j",
     quote:
       "Linguistically, English is an outlier in differentiating between moths and butterflies. In French, there are butterflies (papillons) and night-butterflies (papillons de nuit). German (Tagfalter and Nachtfalter) and Dutch (vlinder and nachtvlinder) adopt similar approaches.",
     book: {
@@ -904,6 +1008,7 @@ export const data: Quote[] = [
     tags: ["moths", "nature"],
   },
   {
+    id: "myfy3u",
     quote:
       "In an age characterised by nature-deficit disorder, I seek liberation through sensitising myself to moths’ seasonality.",
     book: {
@@ -913,6 +1018,7 @@ export const data: Quote[] = [
     tags: ["moths", "nature"],
   },
   {
+    id: "5due7v",
     quote:
       "One moth addict I meet confesses that ‘the hobby takes over your life, no two ways about it,’ but flusters that his partner prefers him to be ‘infatuated with mothing than taking drugs or eyeing up other women.’",
     book: {
@@ -922,6 +1028,7 @@ export const data: Quote[] = [
     tags: ["moths", "nature"],
   },
   {
+    id: "dxt1ri",
     quote: "Migrant mothing is the art of the possible – but so often the ‘possible’ remains precisely that.’",
     book: {
       author: "James Lowen",

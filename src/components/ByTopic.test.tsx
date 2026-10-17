@@ -15,16 +15,19 @@ jest.mock("./TopicView", () => ({
 describe("ByTopic", () => {
   const mockQuotes: Quote[] = [
     {
+      id: "q1",
       quote: "Quote about love",
       book: { title: "Book 1", author: "Author A" },
       tags: ["love", "romance"],
     },
     {
+      id: "q2",
       quote: "Quote about life",
       book: { title: "Book 2", author: "Author B" },
       tags: ["life", "philosophy"],
     },
     {
+      id: "q3",
       quote: "Another quote about love",
       book: { title: "Book 3", author: "Author C" },
       tags: ["love", "emotion"],
@@ -61,6 +64,7 @@ describe("ByTopic", () => {
   test("handles quotes with single tags", () => {
     const singleTagQuotes: Quote[] = [
       {
+        id: "q4",
         quote: "Quote with single tag",
         book: { title: "Book 1", author: "Author A" },
         tags: ["single"],
@@ -76,6 +80,7 @@ describe("ByTopic", () => {
   test("handles quotes with multiple tags", () => {
     const multiTagQuotes: Quote[] = [
       {
+        id: "q5",
         quote: "Quote with multiple tags",
         book: { title: "Book 1", author: "Author A" },
         tags: ["tag1", "tag2", "tag3"],

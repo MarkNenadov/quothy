@@ -15,16 +15,19 @@ jest.mock("./AuthorQuotes", () => ({
 describe("ByAuthor", () => {
   const mockQuotes: Quote[] = [
     {
+      id: "q1",
       quote: "First quote by Author A",
       book: { title: "Book 1", author: "Author A" },
       tags: ["test"],
     },
     {
+      id: "q2",
       quote: "Second quote by Author A",
       book: { title: "Book 2", author: "Author A" },
       tags: ["test"],
     },
     {
+      id: "q3",
       quote: "Quote by Author B",
       book: { title: "Book 3", author: "Author B" },
       tags: ["test"],
@@ -55,11 +58,13 @@ describe("ByAuthor", () => {
   test("handles single author with multiple quotes", () => {
     const singleAuthorQuotes: Quote[] = [
       {
+        id: "q4",
         quote: "Quote 1",
         book: { title: "Book 1", author: "Single Author" },
         tags: ["test"],
       },
       {
+        id: "q5",
         quote: "Quote 2",
         book: { title: "Book 2", author: "Single Author" },
         tags: ["test"],
@@ -75,11 +80,13 @@ describe("ByAuthor", () => {
   test("handles quotes with same author but different books", () => {
     const sameAuthorQuotes: Quote[] = [
       {
+        id: "q6",
         quote: "Quote from Book 1",
         book: { title: "Book 1", author: "Same Author" },
         tags: ["test"],
       },
       {
+        id: "q7",
         quote: "Quote from Book 2",
         book: { title: "Book 2", author: "Same Author" },
         tags: ["test"],

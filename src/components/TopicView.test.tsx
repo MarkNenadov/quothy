@@ -3,7 +3,9 @@ import { render, screen } from "@testing-library/react";
 import { TopicView } from "./TopicView";
 import { Quote } from "../models/quotes";
 
-const quotes: Quote[] = [{ quote: "Quote one", book: { title: "Book 1", author: "Author A" }, tags: ["moths"] }];
+const quotes: Quote[] = [
+  { id: "q1", quote: "Quote one", book: { title: "Book 1", author: "Author A" }, tags: ["moths"] },
+];
 
 describe("TopicView", () => {
   test("links the topic heading when given a heading href", () => {

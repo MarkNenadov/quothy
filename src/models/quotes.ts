@@ -4,6 +4,7 @@ export interface Book {
 }
 
 export interface Quote {
+  id: string;
   quote: string;
   book: Book;
   tags: string[];

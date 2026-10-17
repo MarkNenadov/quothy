@@ -3,8 +3,8 @@ import TopicPage, { generateMetadata, generateStaticParams } from "./page";
 
 jest.mock("../../../data/quoteData", () => ({
   data: [
-    { quote: "About moths", book: { title: "Book 1", author: "Author A" }, tags: ["moths", "nature"] },
-    { quote: "About nature", book: { title: "Book 2", author: "Author B" }, tags: ["nature"] },
+    { id: "q1", quote: "About moths", book: { title: "Book 1", author: "Author A" }, tags: ["moths", "nature"] },
+    { id: "q2", quote: "About nature", book: { title: "Book 2", author: "Author B" }, tags: ["nature"] },
   ],
 }));
 

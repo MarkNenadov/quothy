@@ -3,7 +3,9 @@ import { render, screen } from "@testing-library/react";
 import { AuthorQuotes } from "./AuthorQuotes";
 import { Quote } from "../../models/quotes";
 
-const quotes: Quote[] = [{ quote: "Quote one", book: { title: "Book 1", author: "Author A" }, tags: ["test"] }];
+const quotes: Quote[] = [
+  { id: "q1", quote: "Quote one", book: { title: "Book 1", author: "Author A" }, tags: ["test"] },
+];
 
 describe("AuthorQuotes", () => {
   test("links the author heading when given a heading href", () => {

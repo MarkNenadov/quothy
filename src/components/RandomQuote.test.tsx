@@ -10,6 +10,7 @@ jest.mock("next/navigation", () => ({
 }));
 
 const mockQuote: Quote = {
+  id: "q1",
   quote: "This is a test quote",
   book: {
     title: "Test Book",

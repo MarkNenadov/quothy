@@ -2,9 +2,9 @@ import { findQuotesByAuthorSlug, findQuotesByTag, listAuthorSlugs, listTags } fr
 import { Quote } from "../models/quotes";
 
 const quotes: Quote[] = [
-  { quote: "One", book: { title: "Book 1", author: "Author A" }, tags: ["love", "life"] },
-  { quote: "Two", book: { title: "Book 2", author: "Author A" }, tags: ["life"] },
-  { quote: "Three", book: { title: "Book 3", author: "Author B" }, tags: ["death"] },
+  { id: "q1", quote: "One", book: { title: "Book 1", author: "Author A" }, tags: ["love", "life"] },
+  { id: "q2", quote: "Two", book: { title: "Book 2", author: "Author A" }, tags: ["life"] },
+  { id: "q3", quote: "Three", book: { title: "Book 3", author: "Author B" }, tags: ["death"] },
 ];
 
 describe("quoteQueries", () => {

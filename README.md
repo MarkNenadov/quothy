@@ -47,6 +47,7 @@ Quotes live in [`src/data/quoteData.ts`](src/data/quoteData.ts). Append an entry
 
 ```ts
 {
+  id: "a1b2c3",
   quote: "The quote, verbatim.",
   book: {
     author: "Author Name",
@@ -62,6 +63,7 @@ The data has its own tests ([`quoteData.test.ts`](src/data/quoteData.test.ts)), 
 - two authors whose names map to the same page URL
 - tags that aren't kebab-case
 - duplicate quotes or quotes with no tags
+- missing, malformed or duplicate ids (six lowercase letters or digits, never changed once published)
 - leading or trailing whitespace
 
 In [Claude Code](https://claude.com/claude-code), `/add-quote` does all of this for you: it matches the

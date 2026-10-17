@@ -25,6 +25,7 @@ description: Add one or more book quotes to Quothy's src/data/quoteData.ts, reus
 
    ```ts
    {
+     id: "…",
      quote: "…",
      book: {
        author: "…",
@@ -33,6 +34,9 @@ description: Add one or more book quotes to Quothy's src/data/quoteData.ts, reus
      tags: ["…"],
    },
    ```
+
+   Generate the id with `bun -e "console.log(crypto.randomUUID().slice(0, 6))"`; the data tests check it is
+   unique. Never change an existing quote's id: it is the quote's permanent link.
 
    Trim leading and trailing whitespace, including non-breaking spaces from pasted text.
 

@@ -4,6 +4,7 @@ import { QuoteFigure } from "./QuoteFigure";
 import { Quote } from "../models/quotes";
 
 const quote: Quote = {
+  id: "q1",
   quote: "A test quote",
   book: { title: "Test Book", author: "Test Author" },
   tags: ["test"],

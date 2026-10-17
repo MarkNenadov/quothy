@@ -3,9 +3,9 @@ import AuthorPage, { generateMetadata, generateStaticParams } from "./page";
 
 jest.mock("../../../data/quoteData", () => ({
   data: [
-    { quote: "Quote by A", book: { title: "Book 1", author: "Author A" }, tags: ["test"] },
-    { quote: "Another by A", book: { title: "Book 2", author: "Author A" }, tags: ["test"] },
-    { quote: "Quote by B", book: { title: "Book 3", author: "Author B" }, tags: ["test"] },
+    { id: "q1", quote: "Quote by A", book: { title: "Book 1", author: "Author A" }, tags: ["test"] },
+    { id: "q2", quote: "Another by A", book: { title: "Book 2", author: "Author A" }, tags: ["test"] },
+    { id: "q3", quote: "Quote by B", book: { title: "Book 3", author: "Author B" }, tags: ["test"] },
   ],
 }));
 
