@@ -1,74 +1,11 @@
-'use client';
-
-import { useEffect, useState, useCallback } from 'react';
-import { RandomQuote } from '../components/RandomQuote';
-import { ByAuthor } from '../components/author/ByAuthor';
-import { Tab } from '../components/Tab';
-import { ByTopic } from '../components/ByTopic';
+import { connection } from 'next/server';
+import { QuoteBrowser } from '../components/QuoteBrowser';
 import { data } from '../data/quoteData';
-import { Quote } from '../models/quotes'
+import { pickRandomQuote } from '../lib/pickRandomQuote';
 
-export default function Home() {
-  const [currentTab, setCurrentTab] = useState("random")
-  
-  const [randomQuote, setRandomQuote] = useState<Quote | undefined>(undefined);
+export default async function Home() {
+  // Render per request so each visit gets a fresh random quote in the initial HTML
+  await connection();
 
-  const generateRandomQuote = useCallback((data: Quote[]) => {
-    const randomIndex = Math.floor(Math.random() * data.length);
-    setRandomQuote(data[randomIndex]);
-  }, [setRandomQuote]);
-
-  useEffect(() => {
-    generateRandomQuote(data);
-  }, [generateRandomQuote]); 
-
-  return (
-    <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
-      <h2 className="bold text-5xl p-3">✌ Quothy ✌</h2>
-      <div className="flex flex-row justify-between">
-        <Tab 
-          label="🎲 Random"
-          clickHook={() => {
-            setCurrentTab("random");
-            if (currentTab === "random") {
-              generateRandomQuote(data);
-            }
-          }}
-          isActive={currentTab === "random"}
-          tabIndex={0}
-        />
-        <Tab 
-          label="✍️ By Author"
-          clickHook={() => setCurrentTab("author")}
-          isActive={currentTab === "author"}
-          tabIndex={1}
-        />
-        <Tab 
-          label="📚 By Topic"
-          clickHook={() => setCurrentTab("topic")}
-          isActive={currentTab === "topic"}
-          tabIndex={2}
-        />
-      </div>
-      {
-        currentTab === "random" && <RandomQuote randomQuote={randomQuote} />
-      }
-      {
-        currentTab === "author" && <ByAuthor quoteList={data} />
-      }
-      {
-        currentTab === "topic" && <ByTopic quoteList={data} />
-      }
-      <div className="text-sm text-center pt-2">
-        {data.length} quotes present from {new Set(data.map( d => d.book.author)).size} authors. Quothy uses Next.js, Typescript, and TailwindCSS. You can see the source on 
-        &nbsp;<a 
-          className="underline text-blue-800" 
-          href={"https://github.com/MarkNenadov/quothy"}
-          aria-label='"GitHub Source Link'
-        >
-          GitHub
-        </a>.
-      </div>
-    </div>
-  );  
+  return <QuoteBrowser quotes={data} initialQuote={pickRandomQuote(data)} />;
 }
