@@ -23,12 +23,7 @@ export const QuoteBrowser = ({ quotes, initialQuote }: QuoteBrowserProps) => {
       <div className="flex flex-row justify-between">
         <Tab
           label="🎲 Random"
-          clickHook={() => {
-            setCurrentTab("random");
-            if (currentTab === "random") {
-              setRandomQuote(pickRandomQuote(quotes));
-            }
-          }}
+          clickHook={() => setCurrentTab("random")}
           isActive={currentTab === "random"}
         />
         <Tab
@@ -43,7 +38,12 @@ export const QuoteBrowser = ({ quotes, initialQuote }: QuoteBrowserProps) => {
         />
       </div>
       {
-        currentTab === "random" && <RandomQuote randomQuote={randomQuote} />
+        currentTab === "random" && (
+          <RandomQuote
+            randomQuote={randomQuote}
+            onAnotherQuote={() => setRandomQuote(pickRandomQuote(quotes))}
+          />
+        )
       }
       {
         currentTab === "author" && <ByAuthor quoteList={quotes} />
