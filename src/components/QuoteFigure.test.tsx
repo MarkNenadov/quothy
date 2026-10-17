@@ -25,6 +25,12 @@ describe("QuoteFigure", () => {
     expect(container.querySelector("figcaption cite")).toHaveTextContent("Test Book");
   });
 
+  test("links to the quote's permalink", () => {
+    render(<QuoteFigure quote={quote} />);
+
+    expect(screen.getByRole("link", { name: "Permalink to this quote" })).toHaveAttribute("href", "/quotes/q1");
+  });
+
   test("omits the author when showAuthor is false", () => {
     const { container } = render(<QuoteFigure quote={quote} showAuthor={false} />);
 

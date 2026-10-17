@@ -18,7 +18,7 @@ describe("TopicView", () => {
     render(<TopicView tag="moths" quotes={quotes} />);
 
     expect(screen.getByRole("heading", { name: "moths" })).toBeInTheDocument();
-    expect(screen.queryByRole("link")).not.toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: "moths" })).not.toBeInTheDocument();
   });
 
   test("renders each quote with its author", () => {

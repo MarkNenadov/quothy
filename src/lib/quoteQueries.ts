@@ -12,3 +12,6 @@ export const listTags = (quotes: Quote[]): string[] => [...new Set(quotes.flatMa
 
 export const findQuotesByTag = (quotes: Quote[], tag: string): Quote[] =>
   quotes.filter((quote) => quote.tags.includes(tag));
+
+export const findQuoteById = (quotes: Quote[], id: string): Quote | undefined =>
+  quotes.find((quote) => quote.id === id);

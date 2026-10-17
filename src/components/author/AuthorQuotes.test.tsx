@@ -18,7 +18,7 @@ describe("AuthorQuotes", () => {
     render(<AuthorQuotes author="Author A" quotes={quotes} />);
 
     expect(screen.getByRole("heading", { name: "Author A" })).toBeInTheDocument();
-    expect(screen.queryByRole("link")).not.toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: "Author A" })).not.toBeInTheDocument();
   });
 
   test("renders each quote", () => {

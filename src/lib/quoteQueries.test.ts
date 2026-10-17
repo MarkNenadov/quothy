@@ -1,4 +1,4 @@
-import { findQuotesByAuthorSlug, findQuotesByTag, listAuthorSlugs, listTags } from "./quoteQueries";
+import { findQuoteById, findQuotesByAuthorSlug, findQuotesByTag, listAuthorSlugs, listTags } from "./quoteQueries";
 import { Quote } from "../models/quotes";
 
 const quotes: Quote[] = [
@@ -26,5 +26,15 @@ describe("quoteQueries", () => {
 
   test("findQuotesByTag returns quotes carrying that tag", () => {
     expect(findQuotesByTag(quotes, "life").map((quote) => quote.quote)).toEqual(["One", "Two"]);
+  });
+});
+
+describe("findQuoteById", () => {
+  test("returns the quote with that id", () => {
+    expect(findQuoteById(quotes, "q2")?.quote).toBe("Two");
+  });
+
+  test("returns undefined for an unknown id", () => {
+    expect(findQuoteById(quotes, "nope")).toBeUndefined();
   });
 });
