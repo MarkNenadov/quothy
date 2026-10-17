@@ -35,7 +35,7 @@ export const RandomQuote = ( {randomQuote, onAnotherQuote}: RandomQuoteProps ) =
   };
 
   return (
-    <QuoteContainer textStyle="text-2xl md:text-3xl">
+    <QuoteContainer textStyle="text-xl md:text-2xl">
             {randomQuote && (
         <div className="m-5">
           <QuoteFigure quote={randomQuote} />
