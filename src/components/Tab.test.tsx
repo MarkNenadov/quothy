@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { Tab } from './Tab';
 
 describe('Tab', () => {
@@ -9,101 +10,38 @@ describe('Tab', () => {
     jest.clearAllMocks();
   });
 
-  test('renders with correct label', () => {
-    render(
-      <Tab 
-        label="Test Tab" 
-        isActive={false} 
-        clickHook={mockClickHook} 
-        tabIndex={0} 
-      />
-    );
-    
-    expect(screen.getByText('Test Tab')).toBeInTheDocument();
+  test('renders as a button named by its label', () => {
+    render(<Tab label="Test Tab" isActive={false} clickHook={mockClickHook} />);
+
+    expect(screen.getByRole('button', { name: 'Test Tab' })).toBeInTheDocument();
   });
 
-  test('applies active styles when isActive is true', () => {
-    render(
-      <Tab 
-        label="Active Tab" 
-        isActive={true} 
-        clickHook={mockClickHook} 
-        tabIndex={0} 
-      />
-    );
-    
-    const tabElement = screen.getByText('Active Tab').closest('div');
-    expect(tabElement).toHaveClass('bg-sky-300');
+  test.each([
+    [true, 'true', 'bg-sky-300'],
+    [false, 'false', 'bg-sky-200'],
+  ])('isActive=%p sets aria-pressed=%p and %p', (isActive, ariaPressed, backgroundClass) => {
+    render(<Tab label="Tab" isActive={isActive} clickHook={mockClickHook} />);
+
+    const tab = screen.getByRole('button', { name: 'Tab' });
+    expect(tab).toHaveAttribute('aria-pressed', ariaPressed);
+    expect(tab).toHaveClass(backgroundClass);
   });
 
-  test('applies inactive styles when isActive is false', () => {
-    render(
-      <Tab 
-        label="Inactive Tab" 
-        isActive={false} 
-        clickHook={mockClickHook} 
-        tabIndex={0} 
-      />
-    );
-    
-    const tabElement = screen.getByText('Inactive Tab').closest('div');
-    expect(tabElement).toHaveClass('bg-sky-200');
-  });
+  test('calls clickHook when clicked', async () => {
+    render(<Tab label="Clickable Tab" isActive={false} clickHook={mockClickHook} />);
 
-  test('calls clickHook when clicked', () => {
-    render(
-      <Tab 
-        label="Clickable Tab" 
-        isActive={false} 
-        clickHook={mockClickHook} 
-        tabIndex={0} 
-      />
-    );
-    
-    const tabElement = screen.getByText('Clickable Tab');
-    fireEvent.click(tabElement);
-    
+    await userEvent.click(screen.getByRole('button', { name: 'Clickable Tab' }));
+
     expect(mockClickHook).toHaveBeenCalledTimes(1);
   });
 
-  test('has correct accessibility attributes', () => {
-    render(
-      <Tab 
-        label="Accessible Tab" 
-        isActive={false} 
-        clickHook={mockClickHook} 
-        tabIndex={1} 
-      />
-    );
-    
-    const tabElement = screen.getByText('Accessible Tab').closest('div');
-    
-    expect(tabElement).toHaveAttribute('role', 'button');
-    expect(tabElement).toHaveAttribute('aria-label', 'Accessible Tab');
-    expect(tabElement).toHaveAttribute('tabIndex', '1');
-  });
+  test.each(['{Enter}', ' '])('calls clickHook when %p is pressed while focused', async (key) => {
+    render(<Tab label="Keyboard Tab" isActive={false} clickHook={mockClickHook} />);
 
-  test('has correct base classes', () => {
-    render(
-      <Tab 
-        label="Styled Tab" 
-        isActive={false} 
-        clickHook={mockClickHook} 
-        tabIndex={0} 
-      />
-    );
-    
-    const tabElement = screen.getByText('Styled Tab').closest('div');
-    
-    expect(tabElement).toHaveClass('cursor-pointer');
-    expect(tabElement).toHaveClass('mb-2');
-    expect(tabElement).toHaveClass('p-3');
-    expect(tabElement).toHaveClass('w-1/3');
-    expect(tabElement).toHaveClass('text-center');
-    expect(tabElement).toHaveClass('border');
-    expect(tabElement).toHaveClass('border-1');
-    expect(tabElement).toHaveClass('border-black');
-    expect(tabElement).toHaveClass('text-lg');
-    expect(tabElement).toHaveClass('md:text-2xl');
+    await userEvent.tab();
+    expect(screen.getByRole('button', { name: 'Keyboard Tab' })).toHaveFocus();
+    await userEvent.keyboard(key);
+
+    expect(mockClickHook).toHaveBeenCalledTimes(1);
   });
-}); 
+});

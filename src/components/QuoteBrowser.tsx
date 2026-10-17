@@ -30,19 +30,16 @@ export const QuoteBrowser = ({ quotes, initialQuote }: QuoteBrowserProps) => {
             }
           }}
           isActive={currentTab === "random"}
-          tabIndex={0}
         />
         <Tab
           label="✍️ By Author"
           clickHook={() => setCurrentTab("author")}
           isActive={currentTab === "author"}
-          tabIndex={1}
         />
         <Tab
           label="📚 By Topic"
           clickHook={() => setCurrentTab("topic")}
           isActive={currentTab === "topic"}
-          tabIndex={2}
         />
       </div>
       {
