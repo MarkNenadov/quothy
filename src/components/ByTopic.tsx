@@ -1,9 +1,12 @@
 import React from 'react';
 import { Quote } from '../models/quotes';
-import { QuoteDisplayComponentProps } from '../baseProps';
 import { TopicView } from './TopicView';
 
-export const ByTopic = ({quoteList}: QuoteDisplayComponentProps) => {
+interface ByTopicProps {
+  quoteList: Quote[];
+}
+
+export const ByTopic = ({quoteList}: ByTopicProps) => {
   const quotesByTag: { [tag: string]: Quote[] } = {};
   
   quoteList.forEach((quote) => {

@@ -1,13 +1,16 @@
 import React, {useMemo} from 'react';
 import { Quote } from '../../models/quotes';
-import { QuoteDisplayComponentProps } from '../../baseProps';
 import { AuthorQuotes } from './AuthorQuotes';
 
 interface QuotesByAuthor { 
   [author: string]: Quote[]
 }
 
-export const ByAuthor = ({quoteList}: QuoteDisplayComponentProps) => {
+interface ByAuthorProps {
+  quoteList: Quote[];
+}
+
+export const ByAuthor = ({quoteList}: ByAuthorProps) => {
   const quotesByAuthor = useMemo(() => {
     const groupedQuotes: QuotesByAuthor = {};
     quoteList.forEach((quote) => {
