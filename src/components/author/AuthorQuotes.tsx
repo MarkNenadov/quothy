@@ -1,9 +1,9 @@
 import {QuoteContainer} from "../QuoteContainer"
-import {SubText} from "../SubText"
+import {QuoteFigure} from "../QuoteFigure"
 import { Quote } from '../../models/quotes';
 
 interface AuthorQuotesProps {
-    author: string, 
+    author: string,
     quotes: Quote[]
 }
 
@@ -13,8 +13,7 @@ export const AuthorQuotes = ({quotes, author }: AuthorQuotesProps) => (
         { (!quotes || quotes.length === 0 ) ? <p>No quotes available.</p> : null }
         {quotes.map((quote, index) => (
             <QuoteContainer key={index}>
-            <div>&ldquo;{quote.quote}&rdquo;</div>
-            <SubText>{quote.book.title}</SubText>
+            <QuoteFigure quote={quote} showAuthor={false} />
             </QuoteContainer>
         ))}
     </div>

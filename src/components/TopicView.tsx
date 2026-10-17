@@ -1,6 +1,6 @@
 import { Quote } from '../models/quotes';
 import { QuoteContainer } from './QuoteContainer';
-import { SubText } from './SubText';
+import { QuoteFigure } from './QuoteFigure';
 
 interface TopicViewProps {
     tag: string;
@@ -15,13 +15,7 @@ export const TopicView = (props: TopicViewProps) => {
         <h2>{tag}</h2>
         {quotes.map((quote, index) => (
           <QuoteContainer key={index}>
-            <div className="">&ldquo;{quote.quote}&rdquo;</div>
-            <SubText>
-               {quote.book.title}
-            </SubText>
-            <SubText>
-               {quote.book.author}
-            </SubText>
+            <QuoteFigure quote={quote} />
          </QuoteContainer>
         ))}
       </div>

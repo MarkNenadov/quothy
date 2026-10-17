@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Quote} from '../models/quotes'
 import {QuoteContainer} from "../components/QuoteContainer"
-import {SubText} from "../components/SubText"
+import {QuoteFigure} from "../components/QuoteFigure"
 
 const COPIED_FEEDBACK_MS = 2000;
 
@@ -35,14 +35,10 @@ export const RandomQuote = ( {randomQuote, onAnotherQuote}: RandomQuoteProps ) =
   };
 
   return (
-    <QuoteContainer textStyle="text-s md:text-3xl">
+    <QuoteContainer textStyle="text-2xl md:text-3xl">
             {randomQuote && (
         <div className="m-5">
-          <div>
-            &ldquo;{randomQuote.quote}&rdquo;
-          </div>
-          <SubText>{randomQuote.book.author}</SubText>
-          <SubText>{randomQuote.book.title}</SubText>
+          <QuoteFigure quote={randomQuote} />
           <div className="flex justify-end gap-2 mt-4">
             <ActionButton label={isCopied ? "✅ Copied!" : "📋 Copy"} clickHook={() => copyQuote(randomQuote)} />
             <ActionButton label="🎲 Another quote" clickHook={onAnotherQuote} />

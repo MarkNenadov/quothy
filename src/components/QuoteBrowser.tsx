@@ -18,8 +18,8 @@ export const QuoteBrowser = ({ quotes, initialQuote }: QuoteBrowserProps) => {
   const [randomQuote, setRandomQuote] = useState(initialQuote);
 
   return (
-    <div className="m-2 md:m-4 text-2xl p-2 md:p-4">
-      <h2 className="bold text-5xl p-3">✌ Quothy ✌</h2>
+    <div className="mx-auto max-w-3xl text-2xl p-2 md:p-4">
+      <h1 className="font-bold text-5xl p-3">✌ Quothy ✌</h1>
       <div className="flex flex-row justify-between">
         <Tab
           label="🎲 Random"
