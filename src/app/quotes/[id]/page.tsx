@@ -28,10 +28,11 @@ const findQuote = async (params: QuotePageProps["params"]) => {
 };
 
 export async function generateMetadata({ params }: QuotePageProps): Promise<Metadata> {
-  const { quote, book } = await findQuote(params);
+  const { id, quote, book } = await findQuote(params);
   return pageMetadata(
     `“${truncate(quote, 60)}” — ${book.author}`,
     `“${truncate(quote, 200)}” — ${book.author}, ${book.title}`,
+    `/quotes/${id}/opengraph-image`,
   );
 }
 

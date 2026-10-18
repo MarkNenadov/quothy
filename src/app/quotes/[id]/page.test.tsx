@@ -33,5 +33,6 @@ describe("QuotePage", () => {
 
     expect(metadata.title).toBe("“A short quote” — Author A");
     expect(metadata.description).toBe("“A short quote” — Author A, Book 1");
+    expect(metadata.openGraph).toMatchObject({ images: "/quotes/q1/opengraph-image" });
   });
 });
