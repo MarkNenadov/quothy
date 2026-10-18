@@ -1,7 +1,6 @@
+import { foldText } from "./foldText";
+
 export const slugify = (text: string): string =>
-  text
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
+  foldText(text)
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");

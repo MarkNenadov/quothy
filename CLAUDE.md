@@ -17,6 +17,7 @@ CI (`.github/workflows/ci.yml`) runs all of these; run them before calling a cha
 - `src/app/page.tsx`: random quote, rendered per request (`router.refresh()` fetches another)
 - `src/app/authors/[slug]`, `src/app/topics/[tag]`: pre-built per author and per topic via `generateStaticParams`
 - `src/app/quotes/[id]`: pre-built permalink per quote (every `QuoteFigure` links to it)
+- `src/app/search`: server-side search (`src/lib/searchQuotes.ts`); the header `SearchBox` is a plain GET form
 - `opengraph-image.tsx` (site card, and one per quote): link-preview images whose layouts live in
   `src/components/og`; pages name their image through `pageMetadata`
 - `src/app/layout.tsx`: header, `NavTabs` (client, highlights the current tab) and footer

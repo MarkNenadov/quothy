@@ -2,8 +2,9 @@
 
 [![CI](https://github.com/MarkNenadov/quothy/actions/workflows/ci.yml/badge.svg)](https://github.com/MarkNenadov/quothy/actions/workflows/ci.yml)
 
-Quotes from my reading, browsable at random, by author, or by topic. Every author and topic has its own
-shareable page, like [/topics/moths](https://quotes.marknenadov.com/topics/moths).
+Quotes from my reading, browsable at random, by author, or by topic, and searchable. Every author, topic
+and quote has its own shareable page with a link-preview card, like
+[/topics/moths](https://quotes.marknenadov.com/topics/moths).
 
 **Live:** https://quotes.marknenadov.com/
 
