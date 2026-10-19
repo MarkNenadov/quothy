@@ -314,7 +314,7 @@ export const data: Quote[] = [
   {
     id: "x0k19n",
     quote:
-      "When I was younger, I took a lot of pride in coming up with interview questions. I now believe the best interview technique is no technique at all: you simply have enough of a converssation that you can get to know the person a little bit.",
+      "When I was younger, I took a lot of pride in coming up with interview questions. I now believe the best interview technique is no technique at all: you simply have enough of a conversation that you can get to know the person a little bit.",
     book: {
       author: "Will Guidara",
       title: "Unreasonable Hospitality",
