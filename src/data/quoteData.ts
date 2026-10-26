@@ -1036,4 +1036,14 @@ export const data: Quote[] = [
     },
     tags: ["moths", "nature"],
   },
+  {
+    id: "3c74ca",
+    quote:
+      "This is the maddening truth about time, which most advice on managing it seems to miss. It's like an obstreperous toddler: the more you struggle to control it...the further it slips from your control. Consider all the technology intended to help us gain the upper hand over time...time ought to feel more expansive and abundant, thanks to all the hours freed up. But this is nobody's actual experience. Instead, life accelerates, and everyone grows more impatient.",
+    book: {
+      author: "Oliver Burkeman",
+      title: "Four Thousand Weeks: Time Management for Mortals",
+    },
+    tags: ["time", "technology", "speed"],
+  },
 ];
