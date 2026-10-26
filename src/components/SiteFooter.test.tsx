@@ -13,20 +13,23 @@ describe("SiteFooter", () => {
   test("counts distinct authors, not distinct books", () => {
     render(<SiteFooter quotes={quotes} />);
 
-    expect(screen.getByText(/^3 quotes from 2 authors\./)).toBeInTheDocument();
+    expect(screen.getByRole("contentinfo")).toHaveTextContent(/^3 quotes from 2 authors\./);
   });
 
-  test("credits the builder and stack on the first line", () => {
+  test("credits the builder and stack", () => {
     render(<SiteFooter quotes={quotes} />);
 
-    expect(screen.getByText(/Built by Mark Nenadov with Next\.js, TypeScript, and TailwindCSS\.$/)).toBeInTheDocument();
+    expect(screen.getByRole("contentinfo")).toHaveTextContent(
+      /Built by Mark Nenadov with Next\.js, TypeScript, and TailwindCSS\.$/,
+    );
   });
 
-  test("links to the source on its own line", () => {
+  test("links Built to the source on GitHub", () => {
     render(<SiteFooter quotes={quotes} />);
 
-    expect(screen.getByText(/^You can see the source on/)).toContainElement(
-      screen.getByRole("link", { name: "GitHub" }),
+    expect(screen.getByRole("link", { name: "Built" })).toHaveAttribute(
+      "href",
+      "https://github.com/MarkNenadov/quothy",
     );
   });
 });
