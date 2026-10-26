@@ -659,7 +659,7 @@ export const data: Quote[] = [
       author: "Paul Hillyard",
       title: "The Private Life of Spiders",
     },
-    tags: ["spdiers", "nature"],
+    tags: ["spiders", "nature"],
   },
   {
     id: "0nu5np",
