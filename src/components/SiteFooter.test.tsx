@@ -13,6 +13,20 @@ describe("SiteFooter", () => {
   test("counts distinct authors, not distinct books", () => {
     render(<SiteFooter quotes={quotes} />);
 
-    expect(screen.getByText(/3 quotes present from 2 authors/)).toBeInTheDocument();
+    expect(screen.getByText(/^3 quotes from 2 authors\./)).toBeInTheDocument();
+  });
+
+  test("credits the builder and stack on the first line", () => {
+    render(<SiteFooter quotes={quotes} />);
+
+    expect(screen.getByText(/Built by Mark Nenadov with Next\.js, TypeScript, and TailwindCSS\.$/)).toBeInTheDocument();
+  });
+
+  test("links to the source on its own line", () => {
+    render(<SiteFooter quotes={quotes} />);
+
+    expect(screen.getByText(/^You can see the source on/)).toContainElement(
+      screen.getByRole("link", { name: "GitHub" }),
+    );
   });
 });
