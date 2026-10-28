@@ -1046,4 +1046,13 @@ export const data: Quote[] = [
     },
     tags: ["time", "technology", "speed"],
   },
+  {
+    id: "685e55",
+    quote: "The trouble with trying to master your time, it turns out, is that time ends up mastering you.",
+    book: {
+      author: "Oliver Burkeman",
+      title: "Four Thousand Weeks: Time Management for Mortals",
+    },
+    tags: ["time"],
+  },
 ];
