@@ -980,7 +980,7 @@ export const data: Quote[] = [
   },
   {
     id: "plsvhm",
-    quote: "'Persecution is an almost omnipresent plot device' in Acts",
+    quote: "Persecution is an almost omnipresent plot device in Acts",
     book: {
       author: "Patrick Schreiner",
       title: "Acts: The Christian Standard Commentary",
