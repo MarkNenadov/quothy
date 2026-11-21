@@ -1055,4 +1055,14 @@ export const data: Quote[] = [
     },
     tags: ["time"],
   },
+  {
+    id: "c4b164",
+    quote:
+      "The real measure of any time management technique is whether or not it helps you neglect the right things...Most productivity experts act merely as enablers of our time troubles, by offering ways to keep believing it might be possible to get everything done.",
+    book: {
+      author: "Oliver Burkeman",
+      title: "Four Thousand Weeks: Time Management for Mortals",
+    },
+    tags: ["time", "management"],
+  },
 ];
